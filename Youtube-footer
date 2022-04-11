@@ -1,0 +1,41 @@
+Prerequisites:
+
+  kleopatra (GPG4Win) - https://www.gpg4win.org/download.html
+
+  new monero wallet address (primary)
+
+.....................................................................
+
+0:00 INTRO
+1:03 CREATING THE WORKING FOLDER 
+2:02 DOWNLOADING AND VERIFYING P2POOL
+5:07 INSTALLING P2POOL
+5:54 SYNCING THE BLOCKCHAIN (FROM SCRATCH)
+7:05 IMPORTING A PRE-EXISTING BLOCKCHAIN
+8:38 DOWNLOADING AND VERIFYING XMRIG
+11:46 XMRIG BENCHMARK AND CONFIGURATION
+13:35 SYNCHRONISING P2POOL
+14:25 P2P INTERFACE
+15:54 ABOUT THE RAFFLE AND PORT FORWARDING
+18:37 SIGNING UP FOR THE RAFFLE
+20:37 MONERO.OBSERVER
+21:40 THANKS AND SUPPORT
+
+.....................................................................
+
+Official P2Pool Website - https://p2pool.io
+Official P2Pool Repo - https://github.com/SChernykh/p2pool
+Windows Installer - https://github.com/WeebDataHoarder/p2...
+Xmrig - https://github.com/xmrig/xmrig/releases
+Xmrig Public Key - https://github.com/xmrig/xmrig/blob/m... and/or https://xmrig.com/docs/gpgpg-key
+Huge Pages Guide - https://xmrig.com/docs/miner/hugepages
+PPLNS Article - https://www.nicehash.com/blog/post/ho...
+XMRvsBeast Raffle - https://xmrvsbeast.com/p2pool/
+Mullvad VPN - https://mullvad.net/en/
+XMRvsBeast Subreddit - https://www.reddit.com/r/xmrvsbeast
+Monero. Observer - https://p2pool.observer/
+
+.....................................................................
+
+All contents of this video are valid on release, please keep in mind that future updates of P2Pool may mean that some steps are no longer required.
+If enough of these changes occur a new video will be released.
