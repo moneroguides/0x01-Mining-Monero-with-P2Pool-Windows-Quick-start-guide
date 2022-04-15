@@ -190,3 +190,5 @@ https://github.com/SChernykh/p2pool
 If you're interested to know more about it's featuresa nd how it works, including how to set things up on a different OS, this is the place to come. And at the bottom of this page you will find a donation address. The people who work on these things do it mostly for love rather than money, so every donation goes to keeping them motivated.
 
 Well, that's all for this video. Thanks so much for watching and happy mining.
+
+~moneroguides
