@@ -1,9 +1,11 @@
-### Prerequisites:
+# P2Pool - Windows; Quick start guide
+
+## PREREQUISITES:
 
 * Kleopatra (GPG4Win) - https://www.gpg4win.org/download.html
 * New Monero wallet address (primary)
 
-.....................................................................
+<hr/>
 
 ### INTRO
 
@@ -17,7 +19,6 @@ Before getting started there are a couple of prerequisites: firstly you will nee
 
 This guide assumes no previous mining experience. If you already have xmrig and/or the latest version of the Monero daemon, you may wish to to look only at the P2Pool setup and skip the rest. 
 
-.....................................................................
 
 ### CREATING THE WORKING FOLDER
 
@@ -25,7 +26,6 @@ Before doing anything, we're going to create a folder called 'monero-mining' in 
 
 To do this we'll need to go to the virus and threat protection settings. you can find this by typing it in the search bar or opening the start menu and typing in `virus`. Next, under **Virus and Threat Protection Settings**, click on **Manage Settings**. Scroll down until you see the **Exclusions** Section and choose **Add or remove exclusions**. Click **Add an exclusion**, choose **folder** and then navigate to the folder that you just created in the root directory.
 
-......................................................................
 
 ### DOWNLOADING AND VERIFYING P2POOL
 
@@ -41,13 +41,11 @@ We can see that the name on the certificate matches the key that we just importe
 
 Now to check that this is in fact the file we to be installing and not something sinister, let's go back to our `monero-mining` folder, `shift + right-click` and choose **open powershell here**. Type `Get-Filehash` and then the name of the file that you want to get the hash for, which is this case is the P2Pool installer. Fortunately we don't have to type in the whole thing. We can just start typing "P2" and then press `TAB` and it will completet the filename for us. Now we press `Enter` and it gives us the file hash. We can now open the shasum file and compare the hash within to the hash we just generated. Simply right click and open with your text editor of choice. We can see that this hash matches this line here. Which means that we have a match and that the file is safe to use.
 
-............................................................................
 
 ### INSTALLING P2POOL
 
 Alright, now that we've done that it's time to install P2Pool. Right-click the install file and choose **Run as administrator**. Click **next** until you get to the part where you choose the install location. Install it to the same folder we have been working in. You'll now need a new Monero wallet address where you would like your mined Monero to go. After the setup as finished you'll see a new folder here in our `monero-mining` folder, you'll also see a shortcut has appeared on your desktop. This is how we will start the P2Pool software.
 
-.....................................................................
 
 ### SYNCHING THE BLOCKCHAIN (FROM SCRATCH)
 
@@ -58,7 +56,6 @@ During the initial setup we will be creating a very large file that can easily e
 
 If you're happy to procede then you should run P2Pool by double-clicking the icon that has just been created. We are now syncing a database file located in the p2pool folder with the Monero blockchain. This could take several hours so let's continue with the other parts of the setup in the meantime. If you have followed the steps in this section there is no need to view the next section entitled **IMPORTING A PREEXISTING BLOCKCHAIN**. So you can go ahead and skip over the next section and go straight through to setting up XMrig.
 
-.....................................................................
 
 ### IMPORTING A PREEXISTING BLOCKCHAIN
 
@@ -70,7 +67,6 @@ To do this right-click the start.ps1 file, choose edit, and go to line 60. Where
 
 Now when we use the icon on the desktop to run p2pool, it will use the preexisting blockchain files. This means you'll only have to wait a short while while it synchs the most recent blocks.
 
-.....................................................................
 
 ### DOWNLOADING AND VERIFYING XMRIG
 
@@ -94,7 +90,6 @@ Before we go any further with our XMRig setup, Let's check on the P2Pool softwar
 
 You'll find a timestamp in the description so you can easily return to this point in the video after rebooting.
 
-.....................................................................
 
 ### XMRIG BENCHMARK AND CONFIGURATION
 
@@ -106,7 +101,6 @@ To make sure XMRig is using the correct configuration when it runs, datahoarder 
 
 In the user section we curently have "x+600000". We should replace that number with one equal to 30x your hash rate. For example my hashrate was 2157 so I would multiply that by 30 and I would put this number over here. We can now move this file into the xmrig folder. Replace the file in the destination.Let's also create a shortcut for xmrig and place it on the desktop.
 
-.......................................................................
 
 ### TIME TO MINE 
 
@@ -116,7 +110,6 @@ Finally we can run XMRig. Make sure you do this as an administrator otherwise yo
 
 https://xmrig.com/docs/miner/hugepages
 
-.....................................................................
 
 ### P2P INTERFACE
 
@@ -132,7 +125,6 @@ Under the sidechain heading you will see the number of shares you've submitted a
 
 Other commands can be found by typing `help`. For example you can set `loglevel` which will change how much is being logged out if you find the interface a bit too crowded. Log level 2 is a comfortable  setting for most people. To set it you can simply type `loglevel 2` and hit enter.
 
-.....................................................................
 
 ### PORT FORWRADING
 
@@ -176,7 +168,6 @@ If you have any troubles with this step please head over to the xmrvsbeast subre
 
 https://www.reddit.com/r/xmrvsbeast
 
-.....................................................................
 
 ### MONERO.OBSERVER
 
@@ -190,7 +181,6 @@ Let's take a look at another miners progress to see an example. Here you can see
 
 Below this you will see infomation about each payout and the shares which enabled those payouts at the bottom. 
 
-.....................................................................
 
 ### OUTRO
 
