@@ -1,6 +1,6 @@
 # P2Pool - Windows; Quick start guide
 
-## PREREQUISITES:
+## Prerequisites:
 
 * Kleopatra (GPG4Win) - https://www.gpg4win.org/download.html
 * New Monero wallet address (primary)
