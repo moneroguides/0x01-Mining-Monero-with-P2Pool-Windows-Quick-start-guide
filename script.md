@@ -145,7 +145,6 @@ Open the Windows start menu and begin typing the word "Firewall". It should be t
 
 It is also reccomended to open ports 18080 (Monero daemon) and 37889 (P2Pool Peer Network) for better connectivity with the rest of the network. Although this is not mandatory.
 
-.....................................................................
 
 ### SIGNING UP TO THE RAFFLE
 
