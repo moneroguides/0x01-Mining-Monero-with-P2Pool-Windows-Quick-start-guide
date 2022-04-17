@@ -1,958 +1,1221 @@
-0:00:04.800,0:00:10.240
+1
+00:00:04,800 --> 00:00:10,240
 Hello and welcome to this tutorial on how 
 to install P2Pool and start mining Monero.
 
-0:00:10.880,0:00:15.120
+2
+00:00:10,880 --> 00:00:15,120
 P2Pool is a decentralised pool 
-which leverages a side chain
+which leverages a side chain  
 
-0:00:15.120,0:00:17.840
+3
+00:00:15,120 --> 00:00:17,840
 to manage the active miners and their rewards.
 
-0:00:18.560,0:00:25.440
+4
+00:00:18,560 --> 00:00:25,440
 In order to join the Monero P2Pool all you need 
 to do is run the p2pool software as well as Xmrig.
 
-0:00:26.320,0:00:30.240
+5
+00:00:26,320 --> 00:00:30,240
 Before getting started there 
 are a couple of prerequisites:
 
-0:00:30.240,0:00:33.760
+6
+00:00:30,240 --> 00:00:33,760
 Firstly you will need to have Kleopatra installed
 
-0:00:33.760,0:00:36.240
+7
+00:00:33,760 --> 00:00:36,240
 We'll have a link for that 
 down below in the description.
 
-0:00:36.800,0:00:39.440
+8
+00:00:36,800 --> 00:00:39,440
 You'll also need a Monero wallet address.
 
-0:00:39.440,0:00:44.000
+9
+00:00:39,440 --> 00:00:44,000
 This is so P2Pool has somewhere 
 to send you precious Monero.
 
-0:00:44.000,0:00:48.160
+10
+00:00:44,000 --> 00:00:48,160
 Lastly you'll need to have at 
 least 50GB of free disk space.
 
-0:00:49.040,0:00:52.640
+11
+00:00:49,040 --> 00:00:52,640
 This guide assumes no previous mining experience.
 
-0:00:52.640,0:00:57.920
+12
+00:00:52,640 --> 00:00:57,920
 If you already have xmrig and/or the 
-latest version of the Monero daemon,
+latest version of the Monero daemon,  
 
-0:00:57.920,0:01:02.000
+13
+00:00:57,920 --> 00:01:02,000
 you may wish to to look only at 
 the P2Pool setup and skip the rest.
 
-0:01:06.240,0:01:09.520
+14
+00:01:06,240 --> 00:01:09,520
 Before doing anything, we're 
-going to create a folder called
+going to create a folder called  
 
-0:01:09.520,0:01:14.000
+15
+00:01:09,520 --> 00:01:14,000
 'monero-mining' in our root 
 directory on the `C:` drive.
 
-0:01:14.000,0:01:17.280
+16
+00:01:14,000 --> 00:01:17,280
 We will be doing everything in 
 this directory from this point on.
 
-0:01:18.080,0:01:22.320
+17
+00:01:18,080 --> 00:01:22,320
 Windows may flag Xmrig as a 
-virus in the upcoming steps,
+virus in the upcoming steps,  
 
-0:01:22.320,0:01:26.240
+18
+00:01:22,320 --> 00:01:26,240
 so we'll need to create an 
 exclusion rule for the folder.
 
-0:01:26.240,0:01:30.560
+19
+00:01:26,240 --> 00:01:30,560
 To do this we'll need to go to the 
 virus and threat protection settings.
 
-0:01:30.560,0:01:36.800
+20
+00:01:30,560 --> 00:01:36,800
 You can find this by typing it in the search bar 
 or opening the start menu and typing in `virus`.
 
-0:01:37.600,0:01:41.200
+21
+00:01:37,600 --> 00:01:41,200
 Next, under **Virus and 
 Threat Protection Settings**,
 
-0:01:41.200,0:01:43.200
+22
+00:01:41,200 --> 00:01:43,200
 click on **Manage Settings**.
 
-0:01:43.200,0:01:49.280
+23
+00:01:43,200 --> 00:01:49,280
 Scroll down until you see the **Exclusions** 
 Section and choose **Add or remove exclusions**.
 
-0:01:50.096,0:01:51.696
-Click **Add an exclusion**,
+24
+00:01:50,096 --> 00:01:51,696
+Click **Add an exclusion**,  
 
-0:01:52.240,0:01:58.960
+25
+00:01:52,240 --> 00:01:58,960
 choose **folder** and then navigate to the folder 
 that you just created in the root directory.
 
-0:02:06.320,0:02:09.760
+26
+00:02:06,320 --> 00:02:09,760
 A link to the required installer 
-for setting up your node and a
+for setting up your node and a  
 
-0:02:09.760,0:02:13.760
+27
+00:02:09,760 --> 00:02:13,760
 connection to the P2Pool sidechain 
 can be found in the description.
 
-0:02:14.560,0:02:16.720
-Once you locate the latest release,
+28
+00:02:14,560 --> 00:02:16,720
+Once you locate the latest release,  
 
-0:02:16.720,0:02:22.480
+29
+00:02:16,720 --> 00:02:22,480
 scroll down to the assets and download 
 the installer, shasums and default config.
 
-0:02:25.600,0:02:29.120
+30
+00:02:25,600 --> 00:02:29,120
 Datahoarder's public key can 
 be found on each release page.
 
-0:02:31.680,0:02:35.840
+31
+00:02:31,680 --> 00:02:35,840
 Open up a text editor and copy 
 the public key into the editor.
 
-0:02:38.000,0:02:40.786
+32
+00:02:38,000 --> 00:02:40,786
 We can save it as `key.txt`.
 
-0:02:52.080,0:02:54.320
+33
+00:02:52,080 --> 00:02:54,320
 Then we'll need to open Kleopatra
 
-0:02:56.080,0:02:58.988
+34
+00:02:56,080 --> 00:02:58,988
 and import the key we just copied.
 
-0:03:08.718,0:03:14.408
+35
+00:03:08,718 --> 00:03:14,408
 Be sure to use this drop-down to select **any 
-files** so that you can see the `key.txt` file.
+files** so that you can see the `key.txt` file.  
 
-0:03:18.960,0:03:21.360
-There is no need to counter sign it as trusted.
+36
+00:03:18,960 --> 00:03:21,360
+There is no need to counter sign it as trusted.  
 
-0:03:22.400,0:03:26.880
+37
+00:03:22,400 --> 00:03:26,880
 The important thing is to see a certificate 
 which matches datahoarder's key.
 
-0:03:31.280,0:03:33.600
-Next we want to verify the sums file.
+38
+00:03:31,280 --> 00:03:33,600
+Next we want to verify the sums file.  
 
-0:03:36.080,0:03:42.086
+39
+00:03:36,080 --> 00:03:42,086
 First click on **decrypt/verify** and 
 navigate to the sha file you just downloaded.
 
-0:03:52.880,0:03:57.360
+40
+00:03:52,880 --> 00:03:57,360
 We can see that the name on the certificate 
 matches the key that we just imported.
 
-0:03:59.440,0:04:04.560
+41
+00:03:59,440 --> 00:04:04,560
 Now to check that this is in fact the file we 
 to be installing and not something sinister,
 
-0:04:05.120,0:04:07.760
+42
+00:04:05,120 --> 00:04:07,760
 let's go back to our `monero-mining` folder,
 
-0:04:08.800,0:04:10.320
+43
+00:04:08,800 --> 00:04:10,320
 `shift + right-click`
 
-0:04:11.280,0:04:13.840
+44
+00:04:11,280 --> 00:04:13,840
 and choose **open powershell here**.
 
-0:04:15.680,0:04:17.856
+45
+00:04:15,680 --> 00:04:17,856
 Type `Get-Filehash`
 
-0:04:18.160,0:04:21.680
+46
+00:04:18,160 --> 00:04:21,680
 and then the name of the file 
 that you want to get the hash for,
 
-0:04:21.680,0:04:24.160
-which is this case is the P2Pool installer.
+47
+00:04:21,680 --> 00:04:24,160
+which is this case is the P2Pool installer.  
 
-0:04:24.800,0:04:29.200
+48
+00:04:24,800 --> 00:04:29,200
 Fortunately we don't have to type in the 
-whole thing. We can just start typing
+whole thing. We can just start typing  
 
-0:04:29.200,0:04:34.000
+49
+00:04:29,200 --> 00:04:34,000
 "P2" and then press `TAB` and it 
 will complete the filename for us.
 
-0:04:35.120,0:04:36.320
+50
+00:04:35,120 --> 00:04:36,320
 Now we press `Enter`
 
-0:04:37.360,0:04:39.280
+51
+00:04:37,360 --> 00:04:39,280
 and it gives us the file hash.
 
-0:04:41.680,0:04:47.040
+52
+00:04:41,680 --> 00:04:47,040
 We can now open the shasum file and compare 
 the hash within to the hash we just generated.
 
-0:04:48.720,0:04:53.280
+53
+00:04:48,720 --> 00:04:53,280
 Simply right click and open 
 with your text editor of choice.
 
-0:04:55.040,0:04:58.880
+54
+00:04:55,040 --> 00:04:58,880
 We can see that this hash matches this line here.
 
-0:04:59.520,0:05:03.219
+55
+00:04:59,520 --> 00:05:03,219
 Which means that we have a match 
 and that the file is safe to use.
 
-0:05:12.000,0:05:15.520
+56
+00:05:12,000 --> 00:05:15,520
 Alright, now that we've done 
 that it's time to install P2Pool.
 
-0:05:16.400,0:05:20.560
+57
+00:05:16,400 --> 00:05:20,560
 Right-click the install file and 
 choose **Run as administrator**.
 
-0:05:22.000,0:05:26.080
+58
+00:05:22,000 --> 00:05:26,080
 Click **next** until you get to the part 
 where you choose the install location.
 
-0:05:27.040,0:05:29.760
+59
+00:05:27,040 --> 00:05:29,760
 Install it to the same folder 
 we have been working in.
 
-0:05:30.640,0:05:35.280
+60
+00:05:30,640 --> 00:05:35,280
 You'll now need a new Monero wallet address 
 where you would like your mined Monero to go.
 
-0:05:36.320,0:05:41.360
+61
+00:05:36,320 --> 00:05:41,360
 After the setup as finished you'll see a new 
 folder here in our `monero-mining` folder,
 
-0:05:42.320,0:05:46.240
+62
+00:05:42,320 --> 00:05:46,240
 you'll also see a shortcut 
 has appeared on your desktop.
 
-0:05:46.240,0:05:49.115
+63
+00:05:46,240 --> 00:05:49,115
 This is how we will start the P2Pool software.
 
-0:05:56.880,0:06:02.320
+64
+00:05:56,880 --> 00:06:02,320
 If you've already downloaded Monero block-chain 
-either because of a local node or wallet,
+either because of a local node or wallet,  
 
-0:06:02.320,0:06:04.320
+65
+00:06:02,320 --> 00:06:04,320
 go ahead and skip to the next section.
 
-0:06:05.200,0:06:10.320
+66
+00:06:05,200 --> 00:06:10,320
 For everyone else, follow this section 
 carefully and skip over the next section.
 
-0:06:11.920,0:06:16.400
+67
+00:06:11,920 --> 00:06:16,400
 Before running P2Pool you will need to make 
 sure you have enough space on your drive.
 
-0:06:17.200,0:06:22.480
+68
+00:06:17,200 --> 00:06:22,480
 During the initial setup we will be creating 
 a very large file that can easily excede 40GB.
 
-0:06:24.080,0:06:25.920
-If you're happy to procede then you should
+69
+00:06:24,080 --> 00:06:25,920
+If you're happy to procede then you should  
 
-0:06:25.920,0:06:30.160
+70
+00:06:25,920 --> 00:06:30,160
 run P2Pool by double-clicking the 
 icon that has just been created.
 
-0:06:31.760,0:06:37.600
+71
+00:06:31,760 --> 00:06:37,600
 We are now syncing a database file located in 
 the p2pool folder with the Monero blockchain.
 
-0:06:38.320,0:06:43.600
+72
+00:06:38,320 --> 00:06:43,600
 This could take several hours so let's continue 
 with the other parts of the setup in the meantime.
 
-0:06:44.640,0:06:48.000
+73
+00:06:44,640 --> 00:06:48,000
 If you have followed the steps in 
-this section there is no need to
+this section there is no need to  
 
-0:06:48.000,0:06:52.720
+74
+00:06:48,000 --> 00:06:52,720
 view the next section entitled 
 **IMPORTING A PREEXISTING BLOCKCHAIN**.
 
-0:06:53.520,0:06:59.841
+75
+00:06:53,520 --> 00:06:59,841
 So you can go ahead and skip over the next section 
 and go straight through to setting up XMrig.
 
-0:07:08.160,0:07:13.040
+76
+00:07:08,160 --> 00:07:13,040
 For those of you that already have the 
-monero blockchain downloaded to you computer
+monero blockchain downloaded to you computer  
 
-0:07:13.040,0:07:14.560
+77
+00:07:13,040 --> 00:07:14,560
 you will have two options.
 
-0:07:15.360,0:07:21.120
+78
+00:07:15,360 --> 00:07:21,120
 The first option would be to copy or move your 
 files across to the p2pool/lmdb directory.
 
-0:07:21.920,0:07:30.249
+79
+00:07:21,920 --> 00:07:30,249
 You'll be able to find your preexisting 
 lmdb folder in C:\ProgramData\bitmonero.
 
-0:07:32.080,0:07:37.360
+80
+00:07:32,080 --> 00:07:37,360
 Copy or move the lmdb folder to the 
 root of our current p2pool folder.
 
-0:07:38.240,0:07:42.400
+81
+00:07:38,240 --> 00:07:42,400
 If you'd prefer not to move or 
-copy the existing blockchain file,
+copy the existing blockchain file,  
 
-0:07:42.400,0:07:45.520
+82
+00:07:42,400 --> 00:07:45,520
 you can simply tell p2pool where to look for it.
 
-0:07:46.560,0:07:50.240
+83
+00:07:46,560 --> 00:07:50,240
 To do this right-click the start.ps1 file,
 
-0:07:51.520,0:07:52.897
+84
+00:07:51,520 --> 00:07:52,897
 choose edit,
 
-0:07:54.696,0:07:56.428
+85
+00:07:54,696 --> 00:07:56,428
 and go to line 60.
 
-0:08:01.760,0:08:08.768
+86
+00:08:01,760 --> 00:08:08,768
 Where it says data-dir we're going 
 to change this from data-dir=. to
 
-0:08:09.200,0:08:10.217
+87
+00:08:09,200 --> 00:08:10,217
 space
 
-0:08:10.800,0:08:12.960
+88
+00:08:10,800 --> 00:08:12,960
 and then `data-dir C:\ProgramData\bitmonero\`
 
-0:08:18.240,0:08:20.400
+89
+00:08:18,240 --> 00:08:20,400
 We can now save that and close
 
-0:08:21.680,0:08:25.188
+90
+00:08:21,680 --> 00:08:25,188
 Now when we use the icon on 
-the desktop to run p2pool,
+the desktop to run p2pool,  
 
-0:08:25.200,0:08:28.000
+91
+00:08:25,200 --> 00:08:28,000
 it will use the preexisting blockchain files.
 
-0:08:29.200,0:08:33.881
+92
+00:08:29,200 --> 00:08:33,881
 This means you'll only have to wait a short 
 while while it synchs the most recent blocks.
 
-0:08:41.680,0:08:46.800
+93
+00:08:41,680 --> 00:08:46,800
 It's now time to install XMrig. If 
-you already have this installed then
+you already have this installed then  
 
-0:08:46.800,0:08:48.480
+94
+00:08:46,800 --> 00:08:48,480
 feel free to skip this section.
 
-0:08:49.600,0:08:54.640
+95
+00:08:49,600 --> 00:08:54,640
 Let's head over to the xmrig official 
 github repository to get the latest release.
 
-0:08:55.440,0:08:58.240
+96
+00:08:55,440 --> 00:08:58,240
 The link to this page can be 
 found down in the description.
 
-0:09:00.720,0:09:02.880
-There are a lot of options here,
+97
+00:09:00,720 --> 00:09:02,880
+There are a lot of options here,  
 
-0:09:02.880,0:09:08.960
+98
+00:09:02,880 --> 00:09:08,960
 for windows we're looking for the one 
 that says gcc-win64 in the file name.
 
-0:09:10.000,0:09:13.200
+99
+00:09:10,000 --> 00:09:13,200
 Don't forget to download both 
 of the sums files as well.
 
-0:09:14.480,0:09:16.800
-For convenience, we're going to download these
+100
+00:09:14,480 --> 00:09:16,800
+For convenience, we're going to download these  
 
-0:09:16.800,0:09:19.920
+101
+00:09:16,800 --> 00:09:19,920
 files to the same folder we've 
 been working in up until now.
 
-0:09:21.520,0:09:24.800
+102
+00:09:21,520 --> 00:09:24,800
 We're going to verify the 
-download the same way as before
+download the same way as before  
 
-0:09:24.800,0:09:28.000
+103
+00:09:24,800 --> 00:09:28,000
 so I'll move through this process 
 a bit more quickly this time.
 
-0:09:28.960,0:09:33.360
+104
+00:09:28,960 --> 00:09:33,360
 The public key for xmrig can be found in a 
 different location to the files this time,
 
-0:09:34.160,0:09:36.180
+105
+00:09:34,160 --> 00:09:36,180
 check the video description for the link.
 
-0:09:38.560,0:09:41.920
+106
+00:09:38,560 --> 00:09:41,920
 Once again we're going to 
-copy the key into a text file.
+copy the key into a text file.  
 
-0:09:41.920,0:09:45.520
+107
+00:09:41,920 --> 00:09:45,520
 We can use the same `key.txt` file from earlier.
 
-0:09:48.320,0:09:53.120
+108
+00:09:48,320 --> 00:09:53,120
 Now that we've got our files and the key 
 we're going to open Kleopatra once again.
 
-0:09:59.120,0:10:01.892
+109
+00:09:59,120 --> 00:10:01,892
 First import the `key.txt` file.
 
-0:10:05.120,0:10:06.588
+110
+00:10:05,120 --> 00:10:06,588
 No need to countersign.
 
-0:10:08.800,0:10:17.840
+111
+00:10:08,800 --> 00:10:17,840
 Next choose **decrypt/verify** 
 to verify the shasum files.
 
-0:10:23.040,0:10:26.480
+112
+00:10:23,040 --> 00:10:26,480
 Finally we need to go back 
-into our `monero-mining` folder
+into our `monero-mining` folder  
 
-0:10:26.480,0:10:30.560
+113
+00:10:26,480 --> 00:10:30,560
 and get the file hash for the 
 XMRig zip that we just downloaded.
 
-0:10:31.200,0:10:32.880
+114
+00:10:31,200 --> 00:10:32,880
 Once again, shift+right click
 
-0:10:33.920,0:10:35.760
+115
+00:10:33,920 --> 00:10:35,760
 Open powershell window here
 
-0:10:37.200,0:10:38.720
+116
+00:10:37,200 --> 00:10:38,720
 Type `Get-Filehash`
 
-0:10:39.680,0:10:42.880
+117
+00:10:39,680 --> 00:10:42,880
 and then the name of the file 
 you want to get the hash for.
 
-0:10:44.000,0:10:46.800
+118
+00:10:44,000 --> 00:10:46,800
 This time it's the xmrig zip file,
 
-0:10:46.800,0:10:49.360
+119
+00:10:46,800 --> 00:10:49,360
 remember to press TAB to autocomplete.
 
-0:10:51.760,0:10:53.017
+120
+00:10:51,760 --> 00:10:53,017
 There's our hash
 
-0:10:54.880,0:10:59.162
+121
+00:10:54,880 --> 00:10:59,162
 Now we can open our text editor 
 and see if there's a match.
 
-0:11:04.400,0:11:09.200
+122
+00:11:04,400 --> 00:11:09,200
 As we can see that there's a match between 
 this line and the has that we just generated.
 
-0:11:10.240,0:11:14.640
+123
+00:11:10,240 --> 00:11:14,640
 This means that the zip file is in fact 
-the one we were supposed to download
+the one we were supposed to download  
 
-0:11:14.640,0:11:17.280
+124
+00:11:14,640 --> 00:11:17,280
 and it should therefore be safe to use.
 
-0:11:17.280,0:11:21.120
+125
+00:11:17,280 --> 00:11:21,120
 So let's go ahead and open 
 it and extract the contents.
 
-0:11:23.280,0:11:28.560
+126
+00:11:23,280 --> 00:11:28,560
 Before we go any further with our XMRig 
 setup, Let's check on the P2Pool software.
 
-0:11:29.280,0:11:34.720
+127
+00:11:29,280 --> 00:11:34,720
 It's taken around 8 hours for it to 
-sync on my machine and now that it has,
+sync on my machine and now that it has,  
 
-0:11:34.720,0:11:36.720
+128
+00:11:34,720 --> 00:11:36,720
 it is very important to reboot.
 
-0:11:37.360,0:11:39.680
-You'll find a timestamp in the description
+129
+00:11:37,360 --> 00:11:39,680
+You'll find a timestamp in the description  
 
-0:11:39.680,0:11:43.440
+130
+00:11:39,680 --> 00:11:43,440
 so you can easily return to this 
 point in the video after rebooting.
 
-0:11:50.080,0:11:50.800
+131
+00:11:50,080 --> 00:11:50,800
 Welcome back.
 
-0:11:51.520,0:11:55.840
+132
+00:11:51,520 --> 00:11:55,840
 To continue getting XMRig set up, 
 head into the extracted folder.
 
-0:11:56.560,0:12:00.400
+133
+00:11:56,560 --> 00:12:00,400
 We're going to run `benchmark_1M.cmd`,
 
-0:12:01.280,0:12:04.880
+134
+00:12:01,280 --> 00:12:04,880
 let it run all the way through to 
 make sure your system is stable.
 
-0:12:05.920,0:12:10.640
+135
+00:12:05,920 --> 00:12:10,640
 While this is running it's a good chance 
 to check that `HUGE PAGES` is enabled.
 
-0:12:10.640,0:12:14.080
+136
+00:12:10,640 --> 00:12:14,080
 This is quite important and will 
 really improve your hash rate.
 
-0:12:15.280,0:12:17.680
-If it doesn't say `permission granted` there'll be
+137
+00:12:15,280 --> 00:12:17,680
+If it doesn't say `permission granted` there'll be  
 
-0:12:17.680,0:12:23.840
+138
+00:12:17,680 --> 00:12:23,840
 a link down in the description 
 to help you solve this problem.
 
-0:12:24.560,0:12:27.600
+139
+00:12:24,560 --> 00:12:27,600
 Once that's complete your 
 hashrate can be found here.
 
-0:12:28.640,0:12:32.752
+140
+00:12:28,640 --> 00:12:32,752
 Mine says 2157h/s.
 
-0:12:33.360,0:12:36.960
+141
+00:12:33,360 --> 00:12:36,960
 Take note of your hashrate as 
 you'll need it in just a moment.
 
-0:12:37.520,0:12:42.080
+142
+00:12:37,520 --> 00:12:42,080
 To make sure XMRig is using the 
-correct configuration when it runs,
+correct configuration when it runs,  
 
-0:12:42.080,0:12:44.640
+143
+00:12:42,080 --> 00:12:44,640
 datahoarder has kindly put one together for us.
 
-0:12:45.200,0:12:48.560
+144
+00:12:45,200 --> 00:12:48,560
 It's the config.json file we downloaded earlier.
 
-0:12:49.760,0:12:53.040
+145
+00:12:49,760 --> 00:12:53,040
 But we need to make one slight 
 tweak before we continue.
 
-0:12:54.080,0:12:58.931
+146
+00:12:54,080 --> 00:12:58,931
 In the user section we curently have "x+600000".
 
-0:12:59.360,0:13:04.320
+147
+00:12:59,360 --> 00:13:04,320
 We should replace that number with 
 one equal to 30x your hash rate.
 
-0:13:05.040,0:13:08.960
+148
+00:13:05,040 --> 00:13:08,960
 For example my hashrate was 2157,
 
-0:13:08.960,0:13:11.280
+149
+00:13:08,960 --> 00:13:11,280
 so I multiply that by 30
 
-0:13:12.560,0:13:17.360
+150
+00:13:12,560 --> 00:13:17,360
 and I would put this number 64710 over here.
 
-0:13:18.160,0:13:21.440
+151
+00:13:18,160 --> 00:13:21,440
 We can now move this file into the xmrig folder.
 
-0:13:23.680,0:13:25.840
+152
+00:13:23,680 --> 00:13:25,840
 Replace the file in the destination.
 
-0:13:27.760,0:13:31.987
+153
+00:13:27,760 --> 00:13:31,987
 Let's also create a shortcut for 
 xmrig and place it on the desktop.
 
-0:13:39.840,0:13:43.520
+154
+00:13:39,840 --> 00:13:43,520
 Alright, it's finally time 
 to get our mining underway.
 
-0:13:43.520,0:13:48.080
+155
+00:13:43,520 --> 00:13:48,080
 So let's open p2pool by 
 clicking on the desktop icon.
 
-0:13:48.080,0:13:52.400
+156
+00:13:48,080 --> 00:13:52,400
 We need to wait for it to finish 
 synchronising before we open XMRig.
 
-0:13:53.360,0:13:59.648
+157
+00:13:53,360 --> 00:13:59,648
 You will know it's synched once you start 
 receiving block templates and see `depth = 0`.
 
-0:14:00.347,0:14:02.362
+158
+00:14:00,347 --> 00:14:02,362
 Finally we can run XMRig.
 
-0:14:03.040,0:14:05.600
+159
+00:14:03,040 --> 00:14:05,600
 Make sure you do this as an administrator.
 
-0:14:06.160,0:14:10.480
+160
+00:14:06,160 --> 00:14:10,480
 Otherwise you'll see this 
 `FAILED TO APPLY MSR MOD` error.
 
-0:14:11.200,0:14:15.600
+161
+00:14:11,200 --> 00:14:15,600
 This will negatively impact your 
 hashrate and quite significantly.
 
-0:14:15.600,0:14:20.240
+162
+00:14:15,600 --> 00:14:20,240
 Again, do make sure that `HUGE 
 PAGES` says `permission granted`.
 
-0:14:20.240,0:14:23.262
+163
+00:14:20,240 --> 00:14:23,262
 If it doesn't, check the link 
 in the description for help.
 
-0:14:30.080,0:14:33.840
+164
+00:14:30,080 --> 00:14:33,840
 To check that all you've done is actually 
 paying off, there's a few things you can do.
 
-0:14:34.480,0:14:38.400
+165
+00:14:34,480 --> 00:14:38,400
 Firstly, xmrig should be recieving 
 jobs from your local ip address.
 
-0:14:39.120,0:14:43.920
+166
+00:14:39,120 --> 00:14:43,920
 Secondly you can use console commands 
 when in the p2pool terminal window.
 
-0:14:43.920,0:14:49.520
+167
+00:14:43,920 --> 00:14:49,520
 `status` will print the status of the side 
 chain, your stratum server and the p2pserver.
 
-0:14:50.160,0:14:55.680
+168
+00:14:50,160 --> 00:14:55,680
 If everything went well you should see at least 
 1 connection under the stratumserver subheading.
 
-0:14:55.680,0:14:58.400
+169
+00:14:55,680 --> 00:14:58,400
 It should also report your estimated hash rate.
 
-0:14:59.680,0:15:05.040
+170
+00:14:59,680 --> 00:15:05,040
 As p2pool uses a pplns system you are 
-only paid for your effort if you have
+only paid for your effort if you have  
 
-0:15:05.040,0:15:07.680
+171
+00:15:05,040 --> 00:15:07,680
 a share in this window when a block is minted.
 
-0:15:08.240,0:15:10.560
-For more information about PPLNS,
+172
+00:15:08,240 --> 00:15:10,560
+For more information about PPLNS,  
 
-0:15:10.560,0:15:14.000
+173
+00:15:10,560 --> 00:15:14,000
 please read the blog post by NiceHash 
 linked below in the comments.
 
-0:15:16.080,0:15:20.000
+174
+00:15:16,080 --> 00:15:20,000
 Under the sidechain heading you will see 
-the number of shares you've submitted and
+the number of shares you've submitted and  
 
-0:15:20.000,0:15:23.840
+175
+00:15:20,000 --> 00:15:23,840
 an approximation of the reward you will 
 receive once a block has been minted.
 
-0:15:24.560,0:15:29.280
+176
+00:15:24,560 --> 00:15:29,280
 As we haven't submitted any shares this 
 session there is no information available.
 
-0:15:31.040,0:15:33.520
+177
+00:15:31,040 --> 00:15:33,520
 Other commands can be found by typing `help`.
 
-0:15:34.240,0:15:38.080
+178
+00:15:34,240 --> 00:15:38,080
 For example you can set `loglevel` 
-which will change how much is being
+which will change how much is being  
 
-0:15:38.080,0:15:41.360
+179
+00:15:38,080 --> 00:15:41,360
 logged out if you find the 
 interface a bit too crowded.
 
-0:15:42.960,0:15:46.080
+180
+00:15:42,960 --> 00:15:46,080
 Log level 2 is a comfortable 
 setting for most people.
 
-0:15:46.640,0:15:51.207
+181
+00:15:46,640 --> 00:15:51,207
 To set it you can simply type 
 `loglevel 2` and hit enter.
 
-0:15:59.920,0:16:04.800
+182
+00:15:59,920 --> 00:16:04,800
 There are two big incentives 
 for miners to join p2pool.
 
-0:16:05.440,0:16:09.920
+183
+00:16:05,440 --> 00:16:09,920
 First is the low payout threshold and 0% fees.
 
-0:16:10.800,0:16:15.600
+184
+00:16:10,800 --> 00:16:15,600
 The other is the ability to sign 
 up to the xmrvsbeast raffle.
 
-0:16:16.320,0:16:21.840
+185
+00:16:16,320 --> 00:16:21,840
 If it's your first time hearig about the 
 xmrvsbeast raffle, here's what you need to know.
 
-0:16:23.200,0:16:28.720
+186
+00:16:23,200 --> 00:16:28,720
 The raffle exists to incentivise miners, 
 especially those with low hashrates.
 
-0:16:29.360,0:16:32.160
-It currently does so by pointing large amounts of
+187
+00:16:29,360 --> 00:16:32,160
+It currently does so by pointing large amounts of  
 
-0:16:32.160,0:16:36.080
+188
+00:16:32,160 --> 00:16:36,080
 hashing power to your node 
 for a given period of time.
 
-0:16:36.080,0:16:40.080
-It started quite recently at the beggining of 2021
+189
+00:16:36,080 --> 00:16:40,080
+It started quite recently at the beggining of 2021  
 
-0:16:40.080,0:16:43.840
+190
+00:16:40,080 --> 00:16:43,840
 and was set up by an 
 anonymous group or individual.
 
-0:16:43.840,0:16:49.520
+191
+00:16:43,840 --> 00:16:49,520
 They started by setting up their own 
-pool but with the advent of the P2Pool,
+pool but with the advent of the P2Pool,  
 
-0:16:49.520,0:16:55.920
+192
+00:16:49,520 --> 00:16:55,920
 the xmrvsbeast pool was closed and all the 
 incentives moved to the P2Pool network.
 
-0:16:57.760,0:17:00.080
-If you would like to take part in the raffle,
+193
+00:16:57,760 --> 00:17:00,080
+If you would like to take part in the raffle,  
 
-0:17:00.080,0:17:04.240
+194
+00:17:00,080 --> 00:17:04,240
 the next part of the video covers 
 port forwarding for this purpose.
 
-0:17:06.960,0:17:11.680
+195
+00:17:06,960 --> 00:17:11,680
 In order for the hashing power 
-of xmrvsbeast to reach your node
+of xmrvsbeast to reach your node  
 
-0:17:11.680,0:17:15.200
+196
+00:17:11,680 --> 00:17:15,200
 you will need to open up your 
 stratum server to the world.
 
-0:17:16.000,0:17:18.240
-Port forwarding can be a tricky business,
+197
+00:17:16,000 --> 00:17:18,240
+Port forwarding can be a tricky business,  
 
-0:17:18.240,0:17:22.960
+198
+00:17:18,240 --> 00:17:22,960
 but in general both your router and your 
 computer need to have this port forwarded.
 
-0:17:23.520,0:17:28.720
+199
+00:17:23,520 --> 00:17:28,720
 Since every router is different, we wont' be 
 covering port forwarding on routers in this video.
 
-0:17:29.575,0:17:32.295
+200
+00:17:29,575 --> 00:17:32,295
 But for Windows, here's what we need to do:
 
-0:17:34.000,0:17:38.800
+201
+00:17:34,000 --> 00:17:38,800
 Open the Windows start menu and 
 begin typing the word "Firewall".
 
-0:17:38.800,0:17:40.480
-It should be the first result.
+202
+00:17:38,800 --> 00:17:40,480
+It should be the first result.  
 
-0:17:41.760,0:17:46.880
+203
+00:17:41,760 --> 00:17:46,880
 Once here, click on **Advanced 
 Settings** then choose **Inbound Rules**.
 
-0:17:48.640,0:17:49.680
+204
+00:17:48,640 --> 00:17:49,680
 Create a new rule.
 
-0:17:51.600,0:17:53.120
+205
+00:17:51,600 --> 00:17:53,120
 This rule is for a port.
 
-0:17:54.480,0:17:55.760
+206
+00:17:54,480 --> 00:17:55,760
 Click Next.
 
-0:17:55.760,0:17:56.880
+207
+00:17:55,760 --> 00:17:56,880
 We want TCP
 
-0:17:57.600,0:18:01.360
+208
+00:17:57,600 --> 00:18:01,360
 and then the port number which is 3333.
 
-0:18:02.080,0:18:03.280
+209
+00:18:02,080 --> 00:18:03,280
 Allow the connection.
 
-0:18:03.920,0:18:05.280
+210
+00:18:03,920 --> 00:18:05,280
 Finally, click next
 
-0:18:06.400,0:18:11.360
+211
+00:18:06,400 --> 00:18:11,360
 give it a name, I'll be calling 
 it stratum, and that's it.
 
-0:18:11.360,0:18:17.120
+212
+00:18:11,360 --> 00:18:17,120
 We've opened port 3333 which is the default 
 port of your default Stratum server.
 
-0:18:17.920,0:18:29.280
+213
+00:18:17,920 --> 00:18:29,280
 It's also recommended to open ports 18080 
 (Monero daemon) and 37889 (P2Pool Peer Network)
 
-0:18:29.280,0:18:32.560
+214
+00:18:29,280 --> 00:18:32,560
 for better connectivity with 
 the rest of the network.
 
-0:18:32.560,0:18:34.640
+215
+00:18:32,560 --> 00:18:34,640
 Although this is not mandatory.
 
-0:18:42.160,0:18:44.880
+216
+00:18:42,160 --> 00:18:44,880
 Once you have the correct port forwarded
 
-0:18:44.880,0:18:49.840
+217
+00:18:44,880 --> 00:18:49,840
 you'll need to head on over to the 
 xmrvsbeast website linked in the description.
 
-0:18:51.360,0:18:54.720
+218
+00:18:51,360 --> 00:18:54,720
 At the bottom of the landing page 
 you'll find some useful links.
 
-0:18:55.520,0:19:00.080
+219
+00:18:55,520 --> 00:19:00,080
 The first is the boost dashboard. 
-As well as a raffle, there is also
+As well as a raffle, there is also  
 
-0:19:00.080,0:19:06.160
+220
+00:19:00,080 --> 00:19:06,160
 a boost system which provides bonus hashrate 
 to miners sequentially rather than randomly.
 
-0:19:06.160,0:19:11.280
+221
+00:19:06,160 --> 00:19:11,280
 So regardless of your luck you can always 
 expect a little boost from time to time.
 
-0:19:11.280,0:19:15.360
+222
+00:19:11,280 --> 00:19:15,360
 The second link explains in more 
-detail the rules of the raffle
+detail the rules of the raffle  
 
-0:19:15.360,0:19:20.240
+223
+00:19:15,360 --> 00:19:20,240
 and provides a page to register which 
 we will be heading to in a moment.
 
-0:19:20.240,0:19:24.160
+224
+00:19:20,240 --> 00:19:24,160
 As well as a page for viewing your 
 history as a raffle participant.
 
-0:19:24.800,0:19:26.160
+225
+00:19:25,000 --> 00:19:27,363
 Select register/update.
 
-0:19:28.000,0:19:31.760
+226
+00:19:28,000 --> 00:19:31,760
 This is where you enter the 
 information required to find your node.
 
-0:19:32.480,0:19:36.480
+227
+00:19:32,480 --> 00:19:36,480
 This includes your monero address 
-which is used to manage the raffle,
+which is used to manage the raffle,  
 
-0:19:36.480,0:19:40.400
+228
+00:19:36,480 --> 00:19:40,400
 your public ip address and 
 the port you have forwarded.
 
-0:19:41.200,0:19:45.120
+229
+00:19:41,200 --> 00:19:45,120
 The token field should be left 
 blank for new registrations.
 
-0:19:45.760,0:19:50.400
+230
+00:19:45,760 --> 00:19:50,400
 If you don't know your public ip address 
-you can find it using the powershell
+you can find it using the powershell  
 
-0:19:50.400,0:19:56.400
+231
+00:19:50,400 --> 00:19:56,400
 and the command `ipconfig` or you can 
 more simply check on a 3rd party site.
 
-0:19:57.040,0:20:03.360
+232
+00:19:57,040 --> 00:20:03,360
 The websites of vpn providers such as mullvad 
 or nordvpn are great for this purpose.
 
-0:20:04.560,0:20:07.760
+233
+00:20:04,560 --> 00:20:07,760
 A successful registration 
 should look something like this.
 
-0:20:09.040,0:20:11.600
+234
+00:20:09,040 --> 00:20:11,600
 Write down your token, this is important.
 
-0:20:12.400,0:20:14.720
+235
+00:20:12,400 --> 00:20:14,720
 We can check double check 
-our registration has been
+our registration has been  
 
-0:20:14.720,0:20:18.000
+236
+00:20:14,720 --> 00:20:18,000
 successful by heading over to the history page
 
-0:20:18.000,0:20:22.000
+237
+00:20:18,000 --> 00:20:22,000
 and entering our XMR address and 
 the token we were issued with.
 
-0:20:22.960,0:20:26.640
+238
+00:20:22,960 --> 00:20:27,514
 If you have any troubles with this 
-step please head over to the xmrvsbeast
+step please head over to the xmrvsbeast                           
 
-0:20:27.600,0:20:31.520
+239
+00:20:27,600 --> 00:20:31,520
 subreddit and search for 
 similar issues before posting.
 
-0:20:32.240,0:20:34.640
+240
+00:20:32,240 --> 00:20:34,640
 A link to this can be found in the description.
 
-0:20:41.280,0:20:46.880
+241
+00:20:41,280 --> 00:20:46,880
 You can easily check your progress remotely 
 by visiting https://p2pool.observer/
 
-0:20:47.440,0:20:52.160
+242
+00:20:47,440 --> 00:20:52,160
 Here you can use your monero address to 
 search and find your individual progress.
 
-0:20:53.120,0:20:56.000
+243
+00:20:53,276 --> 00:20:56,156
 As we're new to mining we'll get an error.
 
-0:20:56.560,0:21:02.480
+244
+00:20:56,560 --> 00:21:02,480
 Only once you have begun finding shares will you 
 see information about your miner and its progress.
 
-0:21:03.120,0:21:05.920
+245
+00:21:03,120 --> 00:21:05,920
 To find out how often you may produce shares,
 
-0:21:05.920,0:21:10.880
+246
+00:21:05,920 --> 00:21:10,880
 head back to the main page and select 
 the average share time calculator,
 
-0:21:10.880,0:21:14.000
+247
+00:21:10,880 --> 00:21:14,000
 punch in your hashrate and 
 you'll receive an estimate.
 
-0:21:14.880,0:21:18.400
+248
+00:21:14,880 --> 00:21:18,400
 Let's take a look at another 
 miners progress to see an example.
 
-0:21:19.680,0:21:24.160
+249
+00:21:19,680 --> 00:21:24,160
 Here you can see statistics from 
 the miner including average effort,
 
-0:21:24.160,0:21:26.960
+250
+00:21:24,160 --> 00:21:26,960
 blocks found and share positions.
 
-0:21:26.960,0:21:32.240
+251
+00:21:26,960 --> 00:21:32,240
 Here the shares move from right to left 
 with time unlike the p2pool program.
 
-0:21:32.240,0:21:35.440
+252
+00:21:32,240 --> 00:21:35,440
 Below this you will see 
-information about each payout
+information about each payout  
 
-0:21:35.440,0:21:38.640
+253
+00:21:35,440 --> 00:21:38,916
 and the shares which enabled 
 those payouts at the bottom.
 
-0:21:43.120,0:21:47.520
+254
+00:21:43,120 --> 00:21:47,520
 This pool is only possible because 
-of the hard work of contributors.
+of the hard work of contributors.  
 
-0:21:47.520,0:21:51.760
+255
+00:21:47,520 --> 00:21:51,760
 The main repository for p2pool can 
 be found in the description below.
 
-0:21:52.320,0:21:56.080
+256
+00:21:52,320 --> 00:21:56,080
 If you're interested to know more 
-about it's features and how it works,
+about it's features and how it works,  
 
-0:21:56.080,0:21:59.680
+257
+00:21:56,080 --> 00:21:59,680
 including how to set things up on a different OS,
 
-0:21:59.680,0:22:00.960
+258
+00:21:59,680 --> 00:22:01,156
 this is the place to come.
 
-0:22:01.600,0:22:05.440
+259
+00:22:01,600 --> 00:22:05,440
 And at the bottom of this page 
 you will find a donation address.
 
-0:22:05.440,0:22:09.360
+260
+00:22:05,440 --> 00:22:09,360
 The people who work on these things do 
-it mostly for love rather than money,
+it mostly for love rather than money,  
 
-0:22:09.360,0:22:12.480
+261
+00:22:09,360 --> 00:22:12,480
 so every donation goes to keeping them motivated.
 
-0:22:13.440,0:22:24.960
+262
+00:22:13,440 --> 00:22:19,356
 Well, that's all for this video. Thanks 
 so much for watching and happy mining.
 
-0:22:24.960,0:22:25.713
+263
+00:22:20,462 --> 00:22:22,369
 ~moneroguides
