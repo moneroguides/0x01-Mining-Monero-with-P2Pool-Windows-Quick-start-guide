@@ -345,7 +345,7 @@ feel free to skip this section.
 Let's head over to the xmrig official 
 github repository to get the latest release.
 
-0:08:55.440,0:08:58.240
+0:08:55.636,0:08:58.436
 The link to this page can be 
 found down in the description.
 
@@ -399,7 +399,7 @@ First import the `key.txt` file.
 0:10:05.120,0:10:06.588
 No need to countersign.
 
-0:10:08.800,0:10:17.840
+0:10:08.800,0:10:13.366
 Next choose **decrypt/verify** 
 to verify the shasum files.
 
