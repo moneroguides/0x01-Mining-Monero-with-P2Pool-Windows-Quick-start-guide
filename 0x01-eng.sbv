@@ -1,4 +1,4 @@
-﻿0:00:04.800,0:00:10.240
+0:00:04.800,0:00:10.240
 Hello and welcome to this tutorial on how 
 to install P2Pool and start mining Monero.
 
@@ -85,7 +85,7 @@ click on **Manage Settings**.
 Scroll down until you see the **Exclusions** 
 Section and choose **Add or remove exclusions**.
 
-0:01:49.920,0:01:51.520
+0:01:50.096,0:01:51.696
 Click **Add an exclusion**,
 
 0:01:52.240,0:01:58.960
@@ -97,7 +97,7 @@ A link to the required installer 
 for setting up your node and a
 
 0:02:09.760,0:02:13.760
-connection to the P2Pool side-chain 
+connection to the P2Pool sidechain 
 can be found in the description.
 
 0:02:14.560,0:02:16.720
@@ -115,16 +115,16 @@ be found on each release page.
 Open up a text editor and copy 
 the public key into the editor.
 
-0:02:38.000,0:02:49.840
+0:02:38.000,0:02:40.786
 We can save it as `key.txt`.
 
 0:02:52.080,0:02:54.320
 Then we'll need to open Kleopatra
 
-0:02:56.080,0:03:03.840
+0:02:56.080,0:02:58.988
 and import the key we just copied.
 
-0:03:08.640,0:03:17.840
+0:03:08.718,0:03:14.408
 Be sure to use this drop-down to select **any 
 files** so that you can see the `key.txt` file.
 
@@ -138,7 +138,7 @@ which matches datahoarder's key.
 0:03:31.280,0:03:33.600
 Next we want to verify the sums file.
 
-0:03:36.080,0:03:45.840
+0:03:36.080,0:03:42.086
 First click on **decrypt/verify** and 
 navigate to the sha file you just downloaded.
 
@@ -159,7 +159,7 @@ let's go back to our `monero-mining` folder,
 0:04:11.280,0:04:13.840
 and choose **open powershell here**.
 
-0:04:15.680,0:04:17.040
+0:04:15.680,0:04:17.856
 Type `Get-Filehash`
 
 0:04:18.160,0:04:21.680
@@ -194,7 +194,7 @@ with your text editor of choice.
 0:04:55.040,0:04:58.880
 We can see that this hash matches this line here.
 
-0:04:59.520,0:05:09.840
+0:04:59.520,0:05:03.219
 Which means that we have a match 
 and that the file is safe to use.
 
@@ -226,7 +226,7 @@ folder here in our `monero-mining` folder,
 you'll also see a shortcut 
 has appeared on your desktop.
 
-0:05:46.240,0:05:51.840
+0:05:46.240,0:05:49.115
 This is how we will start the P2Pool software.
 
 0:05:56.880,0:06:02.320
@@ -246,10 +246,10 @@ sure you have enough space on your drive.
 
 0:06:17.200,0:06:22.480
 During the initial setup we will be creating 
-a very large file that can easily exceed 40GB.
+a very large file that can easily excede 40GB.
 
 0:06:24.080,0:06:25.920
-If you're happy to proceed then you should
+If you're happy to procede then you should
 
 0:06:25.920,0:06:30.160
 run P2Pool by double-clicking the 
@@ -271,13 +271,13 @@ this section there is no need to
 view the next section entitled 
 **IMPORTING A PREEXISTING BLOCKCHAIN**.
 
-0:06:53.520,0:07:01.840
+0:06:53.520,0:06:59.841
 So you can go ahead and skip over the next section 
-and go straight through to setting up Xmrig.
+and go straight through to setting up XMrig.
 
 0:07:08.160,0:07:13.040
 For those of you that already have the 
-Monero blockchain downloaded to you computer
+monero blockchain downloaded to you computer
 
 0:07:13.040,0:07:14.560
 you will have two options.
@@ -286,7 +286,7 @@ you will have two options.
 The first option would be to copy or move your 
 files across to the p2pool/lmdb directory.
 
-0:07:21.920,0:07:27.280
+0:07:21.920,0:07:30.249
 You'll be able to find your preexisting 
 lmdb folder in C:\ProgramData\bitmonero.
 
@@ -304,17 +304,17 @@ you can simply tell p2pool where to look for it.
 0:07:46.560,0:07:50.240
 To do this right-click the start.ps1 file,
 
-0:07:51.520,0:07:52.480
+0:07:51.520,0:07:52.897
 choose edit,
 
-0:07:53.560,0:07:57.840
+0:07:54.696,0:07:56.428
 and go to line 60.
 
-0:08:01.760,0:08:08.400
+0:08:01.760,0:08:08.768
 Where it says data-dir we're going 
 to change this from data-dir=. to
 
-0:08:09.200,0:08:09.840
+0:08:09.200,0:08:10.217
 space
 
 0:08:10.800,0:08:12.960
@@ -323,19 +323,19 @@ and then `data-dir C:\ProgramData\bitmonero\`
 0:08:18.240,0:08:20.400
 We can now save that and close
 
-0:08:21.680,0:08:25.200
+0:08:21.680,0:08:25.188
 Now when we use the icon on 
 the desktop to run p2pool,
 
 0:08:25.200,0:08:28.000
 it will use the preexisting blockchain files.
 
-0:08:29.200,0:08:39.840
+0:08:29.200,0:08:33.881
 This means you'll only have to wait a short 
-while while it syncs the most recent blocks.
+while while it synchs the most recent blocks.
 
 0:08:41.680,0:08:46.800
-It's now time to install Xmrig. If 
+It's now time to install XMrig. If 
 you already have this installed then
 
 0:08:46.800,0:08:48.480
@@ -379,7 +379,7 @@ a bit more quickly this time.
 The public key for xmrig can be found in a 
 different location to the files this time,
 
-0:09:34.160,0:09:35.840
+0:09:34.160,0:09:36.180
 check the video description for the link.
 
 0:09:38.560,0:09:41.920
@@ -393,10 +393,10 @@ We can use the same `key.txt` file from earlier.
 Now that we've got our files and the key 
 we're going to open Kleopatra once again.
 
-0:09:59.120,0:10:03.840
+0:09:59.120,0:10:01.892
 First import the `key.txt` file.
 
-0:10:05.120,0:10:06.400
+0:10:05.120,0:10:06.588
 No need to countersign.
 
 0:10:08.800,0:10:17.840
@@ -409,7 +409,7 @@ into our `monero-mining` folder
 
 0:10:26.480,0:10:30.560
 and get the file hash for the 
-Xmrig zip that we just downloaded.
+XMRig zip that we just downloaded.
 
 0:10:31.200,0:10:32.880
 Once again, shift+right click
@@ -430,10 +430,10 @@ This time it's the xmrig zip file,
 0:10:46.800,0:10:49.360
 remember to press TAB to autocomplete.
 
-0:10:51.760,0:10:52.640
+0:10:51.760,0:10:53.017
 There's our hash
 
-0:10:54.880,0:10:59.840
+0:10:54.880,0:10:59.162
 Now we can open our text editor 
 and see if there's a match.
 
@@ -453,7 +453,7 @@ So let's go ahead and open 
 it and extract the contents.
 
 0:11:23.280,0:11:28.560
-Before we go any further with our Xmrig 
+Before we go any further with our XMRig 
 setup, Let's check on the P2Pool software.
 
 0:11:29.280,0:11:34.720
@@ -474,7 +474,7 @@ point in the video after rebooting.
 Welcome back.
 
 0:11:51.520,0:11:55.840
-To continue getting Xmrig set up, 
+To continue getting XMRig set up, 
 head into the extracted folder.
 
 0:11:56.560,0:12:00.400
@@ -503,7 +503,7 @@ to help you solve this problem.
 Once that's complete your 
 hashrate can be found here.
 
-0:12:28.640,0:12:31.440
+0:12:28.640,0:12:32.752
 Mine says 2157h/s.
 
 0:12:33.360,0:12:36.960
@@ -511,7 +511,7 @@ Take note of your hashrate as 
 you'll need it in just a moment.
 
 0:12:37.520,0:12:42.080
-To make sure Xmrig is using the 
+To make sure XMRig is using the 
 correct configuration when it runs,
 
 0:12:42.080,0:12:44.640
@@ -524,8 +524,8 @@ It's the config.json file we downloaded earlier.
 But we need to make one slight 
 tweak before we continue.
 
-0:12:54.080,0:12:56.720
-In the user section we currently have "x+600000".
+0:12:54.080,0:12:58.931
+In the user section we curently have "x+600000".
 
 0:12:59.360,0:13:04.320
 We should replace that number with 
@@ -546,7 +546,7 @@ We can now move this file into the xmrig folder.
 0:13:23.680,0:13:25.840
 Replace the file in the destination.
 
-0:13:27.760,0:13:33.840
+0:13:27.760,0:13:31.987
 Let's also create a shortcut for 
 xmrig and place it on the desktop.
 
@@ -560,14 +560,14 @@ clicking on the desktop icon.
 
 0:13:48.080,0:13:52.400
 We need to wait for it to finish 
-synchronising before we open Xmrig.
+synchronising before we open XMRig.
 
-0:13:53.360,0:13:59.040
-You will know it's synced once you start 
+0:13:53.360,0:13:59.648
+You will know it's synched once you start 
 receiving block templates and see `depth = 0`.
 
-0:14:00.160,0:14:01.840
-Finally we can run Xmrig.
+0:14:00.347,0:14:02.362
+Finally we can run XMRig.
 
 0:14:03.040,0:14:05.600
 Make sure you do this as an administrator.
@@ -584,7 +584,7 @@ hashrate and quite significantly.
 Again, do make sure that `HUGE 
 PAGES` says `permission granted`.
 
-0:14:20.240,0:14:30.080
+0:14:20.240,0:14:23.262
 If it doesn't, check the link 
 in the description for help.
 
@@ -593,7 +593,7 @@ To check that all you've done is actually 
 paying off, there's a few things you can do.
 
 0:14:34.480,0:14:38.400
-Firstly, xmrig should be receiving 
+Firstly, xmrig should be recieving 
 jobs from your local ip address.
 
 0:14:39.120,0:14:43.920
@@ -612,7 +612,7 @@ If everything went well you should see at least 
 It should also report your estimated hash rate.
 
 0:14:59.680,0:15:05.040
-As p2pool uses a PPLNS system you are 
+As p2pool uses a pplns system you are 
 only paid for your effort if you have
 
 0:15:05.040,0:15:07.680
@@ -652,7 +652,7 @@ interface a bit too crowded.
 Log level 2 is a comfortable 
 setting for most people.
 
-0:15:46.640,0:15:53.840
+0:15:46.640,0:15:51.207
 To set it you can simply type 
 `loglevel 2` and hit enter.
 
@@ -668,7 +668,7 @@ The other is the ability to sign 
 up to the xmrvsbeast raffle.
 
 0:16:16.320,0:16:21.840
-If it's your first time hearing about the 
+If it's your first time hearig about the 
 xmrvsbeast raffle, here's what you need to know.
 
 0:16:23.200,0:16:28.720
@@ -683,7 +683,7 @@ hashing power to your node 
 for a given period of time.
 
 0:16:36.080,0:16:40.080
-It started quite recently at the begging of 2021
+It started quite recently at the beggining of 2021
 
 0:16:40.080,0:16:43.840
 and was set up by an 
@@ -723,7 +723,7 @@ computer need to have this port forwarded.
 Since every router is different, we wont' be 
 covering port forwarding on routers in this video.
 
-0:17:29.360,0:17:32.080
+0:17:29.575,0:17:32.295
 But for Windows, here's what we need to do:
 
 0:17:34.000,0:17:38.800
@@ -774,7 +774,7 @@ It's also recommended to open ports 18080 
 for better connectivity with 
 the rest of the network.
 
-0:18:32.560,0:18:42.160
+0:18:32.560,0:18:34.640
 Although this is not mandatory.
 
 0:18:42.160,0:18:44.880
@@ -820,7 +820,7 @@ This is where you enter the 
 information required to find your node.
 
 0:19:32.480,0:19:36.480
-This includes your Monero address 
+This includes your monero address 
 which is used to manage the raffle,
 
 0:19:36.480,0:19:40.400
@@ -840,7 +840,7 @@ and the command `ipconfig` or you can 
 more simply check on a 3rd party site.
 
 0:19:57.040,0:20:03.360
-The websites of VPN providers such as mullvad 
+The websites of vpn providers such as mullvad 
 or nordvpn are great for this purpose.
 
 0:20:04.560,0:20:07.760
@@ -877,7 +877,7 @@ You can easily check your progress remotely 
 by visiting https://p2pool.observer/
 
 0:20:47.440,0:20:52.160
-Here you can use your Monero address to 
+Here you can use your monero address to 
 search and find your individual progress.
 
 0:20:53.120,0:20:56.000
@@ -954,5 +954,5 @@ so every donation goes to keeping them motivated.
 Well, that's all for this video. Thanks 
 so much for watching and happy mining.
 
-0:22:24.960,0:22:25.712
+0:22:24.960,0:22:25.713
 ~moneroguides
