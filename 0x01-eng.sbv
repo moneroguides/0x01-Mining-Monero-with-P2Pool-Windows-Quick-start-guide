@@ -318,7 +318,7 @@ to change this from data-dir=. to
 space
 
 0:08:10.800,0:08:12.960
-and then `data-dir C:\ProgramData\bitmonero\`
+and then `C:\ProgramData\bitmonero\`
 
 0:08:18.240,0:08:20.400
 We can now save that and close
@@ -495,7 +495,7 @@ really improve your hash rate.
 0:12:15.280,0:12:17.680
 If it doesn't say `permission granted` there'll be  
 
-0:12:17.680,0:12:23.840
+0:12:17.680,0:12:21.178
 a link down in the description 
 to help you solve this problem.
 
