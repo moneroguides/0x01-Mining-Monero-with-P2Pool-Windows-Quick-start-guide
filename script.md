@@ -11,61 +11,103 @@
 
 Hello and welcome to this tutorial on how to install P2Pool and start mining Monero.
 
-P2Pool (https://p2pool.io/) is a decentralised pool which leverages a side chain to manage the active miners and their rewards.
+[P2Pool](https://p2pool.io/) is a decentralised pool which leverages a side chain to manage the active miners and their rewards.
 
 In order to join the Monero P2Pool all you need to do is run the p2pool software as well as Xmrig.
 
-Before getting started there are a couple of prerequisites: firstly you will need to have Kleopatra installed, we'll have a link for that down below in the description. You'll also need a Monero wallet address. This is so P2Pool has somewhere to send you precious Monero. Lastly you'll need to have at least 50GB of free disk space. 
+Before getting started there are a couple of prerequisites:  Firstly you will need to have Kleopatra installed, we'll have a link for that down below in the description. 
+
+You'll also need a Monero wallet address. This is so P2Pool has somewhere to send you precious Monero. 
+
+Lastly you'll need to have at least 50GB of free disk space. 
 
 This guide assumes no previous mining experience. If you already have xmrig and/or the latest version of the Monero daemon, you may wish to to look only at the P2Pool setup and skip the rest. 
 
 
 ### CREATING THE WORKING FOLDER
 
-Before doing anything, we're going to create a folder called 'monero-mining' in our root directory on the `C:` drive. We will be doing everything in this directory from this point on. Windows may flag Xmrig as a virus in the upcoming steps, so we'll need to create an exclusion rule for the folder.
+Before doing anything, we're going to create a folder called 'monero-mining' in our root directory on the `C:` drive. 
 
-To do this we'll need to go to the virus and threat protection settings. you can find this by typing it in the search bar or opening the start menu and typing in `virus`. Next, under **Virus and Threat Protection Settings**, click on **Manage Settings**. Scroll down until you see the **Exclusions** Section and choose **Add or remove exclusions**. Click **Add an exclusion**, choose **folder** and then navigate to the folder that you just created in the root directory.
+We will be doing everything in this directory from this point on. Windows may flag Xmrig as a virus in the upcoming steps, so we'll need to create an exclusion rule for the folder.
+
+To do this we'll need to go to the virus and threat protection settings. you can find this by typing it in the search bar or opening the start menu and typing in `virus`. 
+
+Next, under **Virus and Threat Protection Settings**, click on **Manage Settings**. Scroll down until you see the **Exclusions** Section and choose **Add or remove exclusions**. Click **Add an exclusion**, choose **folder** and then navigate to the folder that you just created in the root directory.
 
 
 ### DOWNLOADING AND VERIFYING P2POOL
 
-A link to the required installer for setting up your node and a connection to the P2Pool sidechain can be found in the description - https://github.com/WeebDataHoarder/p2pool-nsis/releases/
- 
+A link to the required installer for setting up your node and a connection to the P2Pool sidechain can be found in the description.
+
 Once you locate the latest release, scroll down to the assets and download the installer, shasums and default config.
 
-Datahoarder's public key can be found on each release page. Open up a text editor and copy the public key into the editor. We can save it as `key.txt`.  Then we'll need to open Kleopatra and import the key we just copied. Be sure to use this dropdown to select **any files** so that you can see the `key.txt` file. There is no need to counter sign it as trusted. The important thing is to see a certificate which matches datahoarder's key.
+Datahoarder's public key can be found on each release page. Open up a text editor and copy the public key into the editor. We can save it as `key.txt`. 
+
+Then we'll need to open Kleopatra and import the key we just copied. 
+
+Be sure to use this dropdown to select **any files** so that you can see the `key.txt` file. There is no need to counter sign it as trusted. The important thing is to see a certificate which matches datahoarder's key.
 
 Next we want to verify the sums file. First click on **decrypt/verify** and navigate to the sha file you just downloaded.
 
 We can see that the name on the certificate matches the key that we just imported.
 
-Now to check that this is in fact the file we to be installing and not something sinister, let's go back to our `monero-mining` folder, `shift + right-click` and choose **open powershell here**. Type `Get-Filehash` and then the name of the file that you want to get the hash for, which is this case is the P2Pool installer. Fortunately we don't have to type in the whole thing. We can just start typing "P2" and then press `TAB` and it will completet the filename for us. Now we press `Enter` and it gives us the file hash. We can now open the shasum file and compare the hash within to the hash we just generated. Simply right click and open with your text editor of choice. We can see that this hash matches this line here. Which means that we have a match and that the file is safe to use.
+Now to check that this is in fact the file we to be installing and not something sinister, let's go back to our `monero-mining` folder, `shift + right-click` and choose **open powershell here**. 
 
+Type `Get-Filehash` and then the name of the file that you want to get the hash for, which is this case is the P2Pool installer. Fortunately we don't have to type in the whole thing. We can just start typing "P2" and then press `TAB` and it will complete the filename for us.
+
+Now we press `Enter` and it gives us the file hash. We can now open the shasum file and compare the hash within to the hash we just generated. Simply right click and open with your text editor of choice. 
+
+We can see that this hash matches this line here. Which means that we have a match and that the file is safe to use.
 
 ### INSTALLING P2POOL
 
-Alright, now that we've done that it's time to install P2Pool. Right-click the install file and choose **Run as administrator**. Click **next** until you get to the part where you choose the install location. Install it to the same folder we have been working in. You'll now need a new Monero wallet address where you would like your mined Monero to go. After the setup as finished you'll see a new folder here in our `monero-mining` folder, you'll also see a shortcut has appeared on your desktop. This is how we will start the P2Pool software.
+Alright, now that we've done that it's time to install P2Pool.
+
+Right-click the install file and choose **Run as administrator**. 
+
+Click **next** until you get to the part where you choose the install location. Install it to the same folder we have been working in. 
+
+You'll now need a new Monero wallet address where you would like your mined Monero to go. 
+
+After the setup as finished you'll see a new folder here in our `monero-mining` folder, you'll also see a shortcut has appeared on your desktop. 
+
+This is how we will start the P2Pool software.
 
 
 ### SYNCHING THE BLOCKCHAIN (FROM SCRATCH)
 
-If you've already downloaded Monero block-chain either because of a local node or wallet, go ahead and skip to the next section. For everyone else, follow this section carefully and skip over the next section. 
+If you've already downloaded Monero block-chain either because of a local node or wallet, go ahead and skip to the next section. 
+
+For everyone else, follow this section carefully and skip over the next section. 
 
 Before running P2Pool you will need to make sure you have enough space on your drive. 
-During the initial setup we will be creating a very large file that can easily excede 40GB. 
 
-If you're happy to procede then you should run P2Pool by double-clicking the icon that has just been created. We are now syncing a database file located in the p2pool folder with the Monero blockchain. This could take several hours so let's continue with the other parts of the setup in the meantime. If you have followed the steps in this section there is no need to view the next section entitled **IMPORTING A PREEXISTING BLOCKCHAIN**. So you can go ahead and skip over the next section and go straight through to setting up XMrig.
+During the initial setup we will be creating a very large file that can easily excede 40GB. If you're happy to procede then you should run P2Pool by double-clicking the icon that has just been created. 
+
+We are now syncing a database file located in the p2pool folder with the Monero blockchain. This could take several hours so let's continue with the other parts of the setup in the meantime. 
+
+If you have followed the steps in this section there is no need to view the next section entitled **IMPORTING A PREEXISTING BLOCKCHAIN**. So you can go ahead and skip over the next section and go straight through to setting up XMrig.
 
 
 ### IMPORTING A PREEXISTING BLOCKCHAIN
 
-For those of you that already have the monero blockchain downloaded to you computer you will have two options. The first option would be to copy or move your files across to the p2pool/lmdb directory. You'll be able to find your preexisting lmdb folder in C:\ProgramData\bitmonero. Copy or move the lmdb folder to the root of our current p2pool folder.
+For those of you that already have the Monero blockchain downloaded to you computer you will have two options. 
+
+The first option would be to copy or move your files across to the p2pool/lmdb directory. 
+
+You'll be able to find your preexisting lmdb folder in C:\ProgramData\bitmonero. 
+
+Copy or move the lmdb folder to the root of our current p2pool folder.
 
 If you'd prefer not to move or copy the existing blockchain file, you can simply tell p2pool where to look for it.
 
-To do this right-click the start.ps1 file, choose edit, and go to line 60. Where it says data-dir we're going to change this from data-dir=. to `data-dir C:\ProgramData\bitmonero\` 
+To do this right-click the start.ps1 file, choose edit, and go to line 60. 
 
-Now when we use the icon on the desktop to run p2pool, it will use the preexisting blockchain files. This means you'll only have to wait a short while while it synchs the most recent blocks.
+Where it says data-dir we're going to change this from data-dir=. to `data-dir C:\ProgramData\bitmonero\`.
+
+We can now save that and close.
+
+Now when we use the icon on the desktop to run p2pool, it will use the pre-existing blockchain files. This means you'll only have to wait a short while while it synchs the most recent blocks.
 
 
 ### DOWNLOADING AND VERIFYING XMRIG
@@ -76,7 +118,7 @@ Let's head over to the xmrig official github repository to get the latest releas
 
 https://github.com/xmrig/xmrig/releases
 
-we're going to verify the download the same way as before so I'll move through this process a bit more quickly this time. The public key for xmrig can be found in a different location this time, check the video description for the link. 
+We're going to verify the download the same way as before so I'll move through this process a bit more quickly this time. The public key for xmrig can be found in a different location this time, check the video description for the link. 
 
 - https://github.com/xmrig/xmrig/blob/master/doc/gpg_keys/xmrig.asc
 - https://xmrig.com/docs/gpgpg-key 
