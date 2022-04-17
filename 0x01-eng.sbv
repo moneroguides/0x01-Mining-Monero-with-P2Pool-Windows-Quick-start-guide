@@ -1,4 +1,4 @@
-0:00:04.800,0:00:10.240
+﻿0:00:04.800,0:00:10.240
 Hello and welcome to this tutorial on how 
 to install P2Pool and start mining Monero.
 
@@ -97,7 +97,7 @@ A link to the required installer 
 for setting up your node and a
 
 0:02:09.760,0:02:13.760
-connection to the P2Pool sidechain 
+connection to the P2Pool side-chain 
 can be found in the description.
 
 0:02:14.560,0:02:16.720
@@ -246,10 +246,10 @@ sure you have enough space on your drive.
 
 0:06:17.200,0:06:22.480
 During the initial setup we will be creating 
-a very large file that can easily excede 40GB.
+a very large file that can easily exceed 40GB.
 
 0:06:24.080,0:06:25.920
-If you're happy to procede then you should
+If you're happy to proceed then you should
 
 0:06:25.920,0:06:30.160
 run P2Pool by double-clicking the 
@@ -273,11 +273,11 @@ view the next section entitled 
 
 0:06:53.520,0:07:01.840
 So you can go ahead and skip over the next section 
-and go straight through to setting up XMrig.
+and go straight through to setting up Xmrig.
 
 0:07:08.160,0:07:13.040
 For those of you that already have the 
-monero blockchain downloaded to you computer
+Monero blockchain downloaded to you computer
 
 0:07:13.040,0:07:14.560
 you will have two options.
@@ -332,10 +332,10 @@ it will use the preexisting blockchain files.
 
 0:08:29.200,0:08:39.840
 This means you'll only have to wait a short 
-while while it synchs the most recent blocks.
+while while it syncs the most recent blocks.
 
 0:08:41.680,0:08:46.800
-It's now time to install XMrig. If 
+It's now time to install Xmrig. If 
 you already have this installed then
 
 0:08:46.800,0:08:48.480
@@ -409,7 +409,7 @@ into our `monero-mining` folder
 
 0:10:26.480,0:10:30.560
 and get the file hash for the 
-XMRig zip that we just downloaded.
+Xmrig zip that we just downloaded.
 
 0:10:31.200,0:10:32.880
 Once again, shift+right click
@@ -453,7 +453,7 @@ So let's go ahead and open 
 it and extract the contents.
 
 0:11:23.280,0:11:28.560
-Before we go any further with our XMRig 
+Before we go any further with our Xmrig 
 setup, Let's check on the P2Pool software.
 
 0:11:29.280,0:11:34.720
@@ -474,7 +474,7 @@ point in the video after rebooting.
 Welcome back.
 
 0:11:51.520,0:11:55.840
-To continue getting XMRig set up, 
+To continue getting Xmrig set up, 
 head into the extracted folder.
 
 0:11:56.560,0:12:00.400
@@ -511,7 +511,7 @@ Take note of your hashrate as 
 you'll need it in just a moment.
 
 0:12:37.520,0:12:42.080
-To make sure XMRig is using the 
+To make sure Xmrig is using the 
 correct configuration when it runs,
 
 0:12:42.080,0:12:44.640
@@ -525,7 +525,7 @@ But we need to make one slight 
 tweak before we continue.
 
 0:12:54.080,0:12:56.720
-In the user section we curently have "x+600000".
+In the user section we currently have "x+600000".
 
 0:12:59.360,0:13:04.320
 We should replace that number with 
@@ -560,14 +560,14 @@ clicking on the desktop icon.
 
 0:13:48.080,0:13:52.400
 We need to wait for it to finish 
-synchronising before we open XMRig.
+synchronising before we open Xmrig.
 
 0:13:53.360,0:13:59.040
-You will know it's synched once you start 
+You will know it's synced once you start 
 receiving block templates and see `depth = 0`.
 
 0:14:00.160,0:14:01.840
-Finally we can run XMRig.
+Finally we can run Xmrig.
 
 0:14:03.040,0:14:05.600
 Make sure you do this as an administrator.
@@ -593,7 +593,7 @@ To check that all you've done is actually 
 paying off, there's a few things you can do.
 
 0:14:34.480,0:14:38.400
-Firstly, xmrig should be recieving 
+Firstly, xmrig should be receiving 
 jobs from your local ip address.
 
 0:14:39.120,0:14:43.920
@@ -612,7 +612,7 @@ If everything went well you should see at least 
 It should also report your estimated hash rate.
 
 0:14:59.680,0:15:05.040
-As p2pool uses a pplns system you are 
+As p2pool uses a PPLNS system you are 
 only paid for your effort if you have
 
 0:15:05.040,0:15:07.680
@@ -668,7 +668,7 @@ The other is the ability to sign 
 up to the xmrvsbeast raffle.
 
 0:16:16.320,0:16:21.840
-If it's your first time hearig about the 
+If it's your first time hearing about the 
 xmrvsbeast raffle, here's what you need to know.
 
 0:16:23.200,0:16:28.720
@@ -683,7 +683,7 @@ hashing power to your node 
 for a given period of time.
 
 0:16:36.080,0:16:40.080
-It started quite recently at the beggining of 2021
+It started quite recently at the begging of 2021
 
 0:16:40.080,0:16:43.840
 and was set up by an 
@@ -820,7 +820,7 @@ This is where you enter the 
 information required to find your node.
 
 0:19:32.480,0:19:36.480
-This includes your monero address 
+This includes your Monero address 
 which is used to manage the raffle,
 
 0:19:36.480,0:19:40.400
@@ -840,7 +840,7 @@ and the command `ipconfig` or you can 
 more simply check on a 3rd party site.
 
 0:19:57.040,0:20:03.360
-The websites of vpn providers such as mullvad 
+The websites of VPN providers such as mullvad 
 or nordvpn are great for this purpose.
 
 0:20:04.560,0:20:07.760
@@ -877,7 +877,7 @@ You can easily check your progress remotely 
 by visiting https://p2pool.observer/
 
 0:20:47.440,0:20:52.160
-Here you can use your monero address to 
+Here you can use your Monero address to 
 search and find your individual progress.
 
 0:20:53.120,0:20:56.000
