@@ -128,7 +128,7 @@ This time it's the xmrig zip file, remember to press TAB to autocomplete.
 
 There's our hash. Now we can open our text editor and see if there's a match.
 
-As we can see that there's a match between this line and the has that we just generated. This means that the zip file is in fact the one we were supposed to download and it should therefore be safe to use. So let's go ahead and open it and extract the contents.
+As we can see that there's a match between this line and the hash that we just generated. This means that the zip file is in fact the one we were supposed to download and it should therefore be safe to use. So let's go ahead and open it and extract the contents.
 
 Before we go any further with our XMRig setup, Let's check on the P2Pool software.
 
