@@ -439,7 +439,7 @@ and see if there's a match.
 
 0:11:04.400,0:11:09.200
 As we can see that there's a match between 
-this line and the has that we just generated.
+this line and the hash that we just generated.
 
 0:11:10.240,0:11:14.640
 This means that the zip file is in fact 
