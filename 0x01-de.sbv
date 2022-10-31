@@ -1,17 +1,17 @@
 0:00:04.800,0:00:10.240
-Hello and welcome to this tutorial on how 
-to install P2Pool and start mining Monero.
+Hallo und willkommen zum tutorial wie man
+P2Pool installiert um Monero zu minen.
 
 0:00:10.880,0:00:15.120
-P2Pool is a decentralised pool 
-which leverages a side chain  
+P2Pool ist ein dezentraler pool 
+was eine side chain nutzt um 
 
 0:00:15.120,0:00:17.840
-to manage the active miners and their rewards.
+aktive miner und deren gewinne zu regulieren.
 
 0:00:18.560,0:00:25.440
-In order to join the Monero P2Pool all you need 
-to do is run the p2pool software as well as Xmrig.
+Um Monero P2Pool beizutreten alles was ihr tun 
+müsst ist die p2pool und Xmrig software laufen.
 
 0:00:26.320,0:00:30.240
 Before getting started there 
