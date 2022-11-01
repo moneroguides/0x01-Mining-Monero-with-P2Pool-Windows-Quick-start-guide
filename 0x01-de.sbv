@@ -1,958 +1,939 @@
 0:00:04.800,0:00:10.240
-Hallo und willkommen zum tutorial wie man
+Hallo und willkommen zum Tutorial wie man
 P2Pool installiert um Monero zu minen.
 
 0:00:10.880,0:00:15.120
-P2Pool ist ein dezentraler pool 
-was eine side chain nutzt um 
+P2Pool ist ein dezentraler Pool 
+der eine Seiten Chain nutzt um 
 
 0:00:15.120,0:00:17.840
 aktive miner und deren gewinne zu regulieren.
 
 0:00:18.560,0:00:25.440
-Um Monero P2Pool beizutreten alles was ihr tun 
-müsst ist die p2pool und Xmrig software laufen.
+Um Monero P2Pool beizutreten alles was ihr tun 
+müsst ist die p2pool und Xmrig Software laufen.
 
 0:00:26.320,0:00:30.240
-Before getting started there 
-are a couple of prerequisites:
+Bevor Sie loslegen, gibt es 
+gibt es ein paar Voraussetzungen:
 
 0:00:30.240,0:00:33.760
-Firstly you will need to have Kleopatra installed
+Erstens müssen Sie Kleopatra installiert haben
 
 0:00:33.760,0:00:36.240
-We'll have a link for that 
-down below in the description.
+Wir haben einen Link dafür 
+weiter unten in der Beschreibung.
 
 0:00:36.800,0:00:39.440
-You'll also need a Monero wallet address.
+Sie benötigen außerdem eine Monero-Wallet-Adresse.
 
 0:00:39.440,0:00:44.000
-This is so P2Pool has somewhere 
-to send you precious Monero.
+Damit P2Pool die Möglichkeit hat 
+Ihnen wertvolle Monero zu schicken.
 
 0:00:44.000,0:00:48.160
-Lastly you'll need to have at 
-least 50GB of free disk space.
+Zu guter Letzt benötigen Sie mindestens 
+ 50 GB freien Speicherplatz.
 
 0:00:49.040,0:00:52.640
-This guide assumes no previous mining experience.
+Diese Anleitung setzt keine Erfahrung im mining voraus.
 
 0:00:52.640,0:00:57.920
-If you already have xmrig and/or the 
-latest version of the Monero daemon,  
+Wenn Sie bereits xmrig und/oder die 
+neueste Version des Monero-Daemons haben,  
 
 0:00:57.920,0:01:02.000
-you may wish to to look only at 
-the P2Pool setup and skip the rest.
+können sie nur die  die P2Pool-Einrichtung
+ ansehen und den Rest überspringen.
 
 0:01:06.240,0:01:09.520
-Before doing anything, we're 
-going to create a folder called  
+Bevor wir etwas tun, müssen wir 
+einen Ordner namens  'monero-mining'
 
 0:01:09.520,0:01:14.000
-'monero-mining' in our root 
-directory on the `C:` drive.
+in unserem Stammverzeichnis  Verzeichnis
+ auf dem Laufwerk `C:` kreieren.
 
 0:01:14.000,0:01:17.280
-We will be doing everything in 
-this directory from this point on.
+Wir werden von nun an alles in 
+diesem Verzeichnis machen.
 
 0:01:18.080,0:01:22.320
-Windows may flag Xmrig as a 
-virus in the upcoming steps,  
+Windows könnte Xmrig in den nächsten 
+Schritten als Virus verwechseln,  
 
 0:01:22.320,0:01:26.240
-so we'll need to create an 
-exclusion rule for the folder.
+Daher müssen wir eine 
+Ausschlussregel für den Ordner erstellen.
 
 0:01:26.240,0:01:30.560
-To do this we'll need to go to the 
-virus and threat protection settings.
+Dazu müssen wir zu den 
+Einstellungen für den Viren- und Bedrohungsschutz.
 
 0:01:30.560,0:01:36.800
-You can find this by typing it in the search bar 
-or opening the start menu and typing in `virus`.
+Sie können diese Einstellungen finden, indem Sie in die Suchleiste oder Startmenü `Virus` eingeben .
 
 0:01:37.600,0:01:41.200
-Next, under **Virus and 
-Threat Protection Settings**,
+Als nächstes wählen Sie **Viren- und 
+Einstellungen für Bedrohungsschutz**,
 
 0:01:41.200,0:01:43.200
-click on **Manage Settings**.
+klicken Sie auf **Einstellungen verwalten**.
 
 0:01:43.200,0:01:49.280
-Scroll down until you see the **Exclusions** 
-Section and choose **Add or remove exclusions**.
+Scrollen Sie nach unten, bis Sie den Abschnitt **Ausschlüsse** 
+Abschnitt und wählen Sie **Ausschlüsse hinzufügen oder entfernen**.
 
 0:01:50.096,0:01:51.696
-Click **Add an exclusion**,  
+Klicken Sie auf **Einen Ausschluss hinzufügen**,  
 
 0:01:52.240,0:01:58.960
-choose **folder** and then navigate to the folder 
-that you just created in the root directory.
+wählen Sie **Ordner** und navigieren Sie  zu
+ dem Ordner den Sie gerade erstellt haben.
 
 0:02:06.320,0:02:09.760
-A link to the required installer 
-for setting up your node and a  
+Ein Link zu dem erforderlichen Installationsprogramm 
+zum Einrichten Ihres Knotens und einen  
 
 0:02:09.760,0:02:13.760
-connection to the P2Pool sidechain 
-can be found in the description.
+Verbindung zur P2Pool Sidechain 
+ist in der Beschreibung zu finden.
 
 0:02:14.560,0:02:16.720
-Once you locate the latest release,  
+Sobald Sie die neueste Version gefunden haben,  
 
 0:02:16.720,0:02:22.480
-scroll down to the assets and download 
-the installer, shasums and default config.
+scrollen Sie zu den Assets und laden Sie den Installer,
+ die Shasums und die Standardkonfiguration herunter.
 
 0:02:25.600,0:02:29.120
-Datahoarder's public key can 
-be found on each release page.
+Der öffentliche Schlüssel von Datahoarder  
+finden Sie auf jeder Release-Seite.
 
 0:02:31.680,0:02:35.840
-Open up a text editor and copy 
-the public key into the editor.
+Öffnen Sie einen Texteditor und kopieren Sie 
+den öffentlichen Schlüssel in den Editor.
 
 0:02:38.000,0:02:40.786
-We can save it as `key.txt`.
+Wir können ihn als `key.txt` speichern.
 
 0:02:52.080,0:02:54.320
-Then we'll need to open Kleopatra
+Dann müssen wir Kleopatra öffnen
 
 0:02:56.080,0:02:58.988
-and import the key we just copied.
+und den Schlüssel importieren, den wir gerade kopiert haben.
 
 0:03:08.718,0:03:14.408
-Be sure to use this drop-down to select **any 
-files** so that you can see the `key.txt` file.  
+Achten Sie darauf, dass Sie in **beliebige Dateien** auswählen, um die Datei "key.txt" sehen zu können.  
 
 0:03:18.960,0:03:21.360
-There is no need to counter sign it as trusted.  
+Es ist nicht notwendig, die Datei als vertrauenswürdig zu signieren.  
 
 0:03:22.400,0:03:26.880
-The important thing is to see a certificate 
-which matches datahoarder's key.
+Das Wichtigste ist, dass ein Zertifikat zu sehen ist 
+das mit dem Schlüssel von datahoarder übereinstimmt.
 
 0:03:31.280,0:03:33.600
-Next we want to verify the sums file.  
+Als nächstes wollen wir die checksum Datei verifizieren.  
 
 0:03:36.080,0:03:42.086
-First click on **decrypt/verify** and 
-navigate to the sha file you just downloaded.
+Klicken Sie auf **entschlüsseln/verifizieren** und 
+navigieren Sie zu der heruntergeladene sha-Datei.
 
 0:03:52.880,0:03:57.360
-We can see that the name on the certificate 
-matches the key that we just imported.
+Wir können sehen, dass der Name auf dem Zertifikat 
+mit dem importierten Schlüssel übereinstimmt.
 
 0:03:59.440,0:04:04.560
-Now to check that this is in fact the file we 
-to be installing and not something sinister,
+Zur Überprüfung, ob es sich tatsächlich die Datei ist, die wir  installieren wollen, und nicht etwas schädliches,
 
 0:04:05.120,0:04:07.760
-let's go back to our `monero-mining` folder,
+gehen wir zurück zu unserem `monero-mining` Ordner,
 
 0:04:08.800,0:04:10.320
-`shift + right-click`
+Umschalt + Rechtsklick".
 
 0:04:11.280,0:04:13.840
-and choose **open powershell here**.
+und wählen **Open powershell here**.
 
 0:04:15.680,0:04:17.856
-Type `Get-Filehash`
+Gib `Get-Filehash` ein
 
 0:04:18.160,0:04:21.680
-and then the name of the file 
-that you want to get the hash for,
+und dann den Namen der Datei 
+für die Sie den Hash erhalten möchten,
 
 0:04:21.680,0:04:24.160
-which is this case is the P2Pool installer.  
+das ist in diesem Fall das P2Pool-Installationsprogramm.  
 
 0:04:24.800,0:04:29.200
-Fortunately we don't have to type in the 
-whole thing. We can just start typing  
+Zum Glück müssen wir nicht alles eingeben. 
+Wir können einfach anfangen zu tippen  
 
 0:04:29.200,0:04:34.000
-"P2" and then press `TAB` and it 
-will complete the filename for us.
+"P2" und drücken dann `TAB` und es 
+vervollständigt den Dateinamen für uns.
 
 0:04:35.120,0:04:36.320
-Now we press `Enter`
+Jetzt drücken wir `Enter`
 
 0:04:37.360,0:04:39.280
-and it gives us the file hash.
+und wir bekommen den Hash der Datei.
 
 0:04:41.680,0:04:47.040
-We can now open the shasum file and compare 
-the hash within to the hash we just generated.
+Wir können nun die shasum-Datei öffnen und den 
+den Hash mit dem gerade erzeugten Hash vergleichen.
 
 0:04:48.720,0:04:53.280
-Simply right click and open 
-with your text editor of choice.
+Klicken Sie mit der rechten Maustaste und öffnen Sie 
+einen Texteditor Ihrer Wahl.
 
 0:04:55.040,0:04:58.880
-We can see that this hash matches this line here.
+Wir können sehen, dass dieser Hash mit dieser Zeile hier übereinstimmt.
 
 0:04:59.520,0:05:03.219
-Which means that we have a match 
-and that the file is safe to use.
+Das bedeutet, dass wir eine Übereinstimmung haben 
+und dass die Datei sicher zu verwenden ist.
 
 0:05:12.000,0:05:15.520
-Alright, now that we've done 
-that it's time to install P2Pool.
+In Ordnung, jetzt, da wir das getan haben 
+ist es nun an der Zeit, P2Pool zu installieren.
 
 0:05:16.400,0:05:20.560
-Right-click the install file and 
-choose **Run as administrator**.
+Rechte Maustaste auf die Installationsdatei klicken  und **Ausführen als Administrator** wählen.
 
 0:05:22.000,0:05:26.080
-Click **next** until you get to the part 
-where you choose the install location.
+Klicken Sie auf **Weiter**, bis Sie zu dem Teil kommen 
+wo Sie den Installationsort auswählen.
 
 0:05:27.040,0:05:29.760
-Install it to the same folder 
-we have been working in.
+Installieren Sie es in denselben Ordner 
+in dem wir bisher gearbeitet haben.
 
 0:05:30.640,0:05:35.280
-You'll now need a new Monero wallet address 
-where you would like your mined Monero to go.
+Sie benötigen nun eine neue Monero-Wallet-Adresse 
+an die Sie Ihre geminte Monero empfangen möchten.
 
 0:05:36.320,0:05:41.360
-After the setup as finished you'll see a new 
-folder here in our `monero-mining` folder,
+Nachdem die Einrichtung abgeschlossen ist, sehen Sie im `monero-mining` Ordner einen neuem Ordner.
 
 0:05:42.320,0:05:46.240
-you'll also see a shortcut 
-has appeared on your desktop.
+Sie werden auch sehen, dass eine Verknüpfung 
+auf eurem Desktop erscheint.
 
 0:05:46.240,0:05:49.115
-This is how we will start the P2Pool software.
+So starten wir die P2Pool-Software.
 
 0:05:56.880,0:06:02.320
-If you've already downloaded Monero block-chain 
-either because of a local node or wallet,  
+Wenn Sie die Monero-Blockchain bereits wegen eines lokalen Knotens oder einer Wallet haben,  
 
 0:06:02.320,0:06:04.320
-go ahead and skip to the next section.
+fahren Sie fort und springen Sie zum nächsten Abschnitt.
 
 0:06:05.200,0:06:10.320
-For everyone else, follow this section 
-carefully and skip over the next section.
+Für alle anderen, folgen Sie diesem Abschnitt 
+sorgfältig und überspringt den nächsten Abschnitt.
 
 0:06:11.920,0:06:16.400
-Before running P2Pool you will need to make 
-sure you have enough space on your drive.
+Bevor Sie P2Pool starten, müssen Sie sicherstellen 
+dass Sie genügend Platz auf Ihrem Laufwerk haben.
 
 0:06:17.200,0:06:22.480
-During the initial setup we will be creating 
-a very large file that can easily excede 40GB.
+Während der Ersteinrichtung erstellen wir 
+eine Datei, die leicht 40 GB überschreiten kann.
 
 0:06:24.080,0:06:25.920
-If you're happy to procede then you should  
+Wenn Sie damit einverstanden sind, sollten Sie  
 
 0:06:25.920,0:06:30.160
-run P2Pool by double-clicking the 
-icon that has just been created.
+??????????yyyyyP2Pool durch einen Doppelklick auf das 
+Symbol, das gerade erstellt wurde.
 
 0:06:31.760,0:06:37.600
-We are now syncing a database file located in 
-the p2pool folder with the Monero blockchain.
+Wir synchronisieren jetzt eine Datenbankdatei, die sich im Ordner 
+ẞßßßßßßßßp2pool-Ordner mit der Monero-Blockchain.
 
 0:06:38.320,0:06:43.600
-This could take several hours so let's continue 
-with the other parts of the setup in the meantime.
+Dies kann mehrere Stunden dauern, in der Zwischenzeit können sie weiter andere Teilen einrichten.
 
 0:06:44.640,0:06:48.000
-If you have followed the steps in 
-this section there is no need to  
+Wenn Sie die Schritte in diesem Abschnitt befolgt habt, ist es nicht nötig den nächsten Abschnitt mit dem Titel:
 
 0:06:48.000,0:06:52.720
-view the next section entitled 
-**IMPORTING A PREEXISTING BLOCKCHAIN**.
+ 
+**IMPORTIEREN EINER BEREITS VORHANDENEN BLOCKCHAIN**durchzuführen.
 
 0:06:53.520,0:06:59.841
-So you can go ahead and skip over the next section 
-and go straight through to setting up XMrig.
+Sie können also den nächsten Abschnitt überspringen 
+und direkt zur Einrichtung von XMrig übergehen.
 
 0:07:08.160,0:07:13.040
-For those of you that already have the 
-monero blockchain downloaded to you computer  
+Für diejenigen unter Ihnen, die bereits die 
+Monero-Blockchain auf euren Computer habt  
 
 0:07:13.040,0:07:14.560
-you will have two options.
+haben Sie zwei Möglichkeiten.
+Die erste Möglichkeit wäre
 
 0:07:15.360,0:07:21.120
-The first option would be to copy or move your 
-files across to the p2pool/lmdb directory.
+die Dateien in den in das Verzeichnis p2pool/lmdb zu kopieren oder zu verschieben.
 
 0:07:21.920,0:07:30.249
-You'll be able to find your preexisting 
-lmdb folder in C:\ProgramData\bitmonero.
+Sie finden den bereits existierenden 
+lmdb-Ordner in C:\ProgramData\bitmonero.
 
 0:07:32.080,0:07:37.360
-Copy or move the lmdb folder to the 
-root of our current p2pool folder.
+Kopieren oder verschieben Sie den Ordner lmdb in das 
+Stammverzeichnis unseres aktuellen p2pool-Ordners.
 
 0:07:38.240,0:07:42.400
-If you'd prefer not to move or 
-copy the existing blockchain file,  
+Wenn Sie die Blockchain-Datei nicht verschieben oder 
+hinzu kopieren möchten,  
 
 0:07:42.400,0:07:45.520
-you can simply tell p2pool where to look for it.
+können Sie p2pool einfach mitteilen, wo sie zu finden  ist.
 
 0:07:46.560,0:07:50.240
-To do this right-click the start.ps1 file,
+Klicken Sie dazu mit der rechten Maustaste auf die Datei start.ps1,
 
 0:07:51.520,0:07:52.897
-choose edit,
+wählen Sie editieren,
 
 0:07:54.696,0:07:56.428
-and go to line 60.
+und gehen Sie zu Zeile 60.
 
 0:08:01.760,0:08:08.768
-Where it says data-dir we're going 
-to change this from data-dir=. to
+Wo data-dir steht, werden wir 
+ändern wir dies von data-dir=. zu
 
 0:08:09.200,0:08:10.217
-space
+Leerzeichen
 
 0:08:10.800,0:08:12.960
-and then `C:\ProgramData\bitmonero\`
+und dann `C:\ProgramData\bitmonero\'
 
 0:08:18.240,0:08:20.400
-We can now save that and close
+Jetzt können wir speichern und schließen
 
 0:08:21.680,0:08:25.188
-Now when we use the icon on 
-the desktop to run p2pool,  
+Wenn wir nun das Symbol auf dem 
+ Desktop verwenden, um p2pool zu starten,  
 
 0:08:25.200,0:08:28.000
-it will use the preexisting blockchain files.
+wird es die bereits existierenden Blockchain-Datei verwenden.
 
 0:08:29.200,0:08:33.881
-This means you'll only have to wait a short 
-while while it synchs the most recent blocks.
+Das bedeutet, dass Sie nur kurz warten müssen, während die neuesten Blöcke synchronisiert werden.
 
 0:08:41.680,0:08:46.800
-It's now time to install XMrig. If 
-you already have this installed then  
+Nun ist es an der Zeit, XMrig zu installieren. Wenn 
+Sie dies bereits installiert haben, dann  
 
 0:08:46.800,0:08:48.480
-feel free to skip this section.
+können Sie diesen Abschnitt überspringen.
 
 0:08:49.600,0:08:54.640
-Let's head over to the xmrig official 
-github repository to get the latest release.
+Gehen wir nun zum offiziellen xmrig 
+Github-Repository, um die neueste Version zu erhalten.
 
 0:08:55.636,0:08:58.436
-The link to this page can be 
-found down in the description.
+Den Link zu dieser Seite finden Sie 
+finden Sie unten in der Beschreibung.
 
 0:09:00.720,0:09:02.880
-There are a lot of options here,  
+Hier gibt es eine Menge Optionen,  
 
 0:09:02.880,0:09:08.960
-for windows we're looking for the one 
-that says gcc-win64 in the file name.
+für Windows suchen wir nach der Option 
+die gcc-win64 im Dateinamen hat.
 
 0:09:10.000,0:09:13.200
-Don't forget to download both 
-of the sums files as well.
+Vergessen Sie nicht, auch die beiden 
+Checksum-Dateien herunterzuladen.
 
 0:09:14.480,0:09:16.800
-For convenience, we're going to download these  
+Der Einfachheit halber werden wir diese Dateien in den selben Ordner herunterladen  
 
 0:09:16.800,0:09:19.920
-files to the same folder we've 
-been working in up until now.
+ in dem wir bis jetzt gearbeitet haben.
 
 0:09:21.520,0:09:24.800
-We're going to verify the 
-download the same way as before  
+Wir verifizieren den 
+Download auf die gleiche Weise wie zuvor  
 
 0:09:24.800,0:09:28.000
-so I'll move through this process 
-a bit more quickly this time.
+also werde ich den Prozess dieses Mal 
+etwas schneller durchführen.
 
 0:09:28.960,0:09:33.360
-The public key for xmrig can be found in a 
-different location to the files this time,
+Der öffentliche Schlüssel für xmrig befindet sich an einem  anderen Ort als die Dateien,
 
 0:09:34.160,0:09:36.180
-check the video description for the link.
+Der Link ist in der Videobeschreibung zu finden.
 
 0:09:38.560,0:09:41.920
-Once again we're going to 
-copy the key into a text file.  
+Noch einmal werden wir 
+den Schlüssel in eine Textdatei kopieren.  
 
 0:09:41.920,0:09:45.520
-We can use the same `key.txt` file from earlier.
+Wir können dieselbe Datei `key.txt` von vorhin verwenden.
 
 0:09:48.320,0:09:53.120
-Now that we've got our files and the key 
-we're going to open Kleopatra once again.
+Jetzt, da wir unsere Dateien und den Schlüssel haben 
+werden wir Kleopatra noch einmal öffnen.
 
 0:09:59.120,0:10:01.892
-First import the `key.txt` file.
+Zuerst importieren wir die Datei `key.txt`.
 
 0:10:05.120,0:10:06.588
-No need to countersign.
+Gegensignieren ist nicht nötig.
 
 0:10:08.800,0:10:13.366
-Next choose **decrypt/verify** 
-to verify the shasum files.
+Wählen Sie nun **entschlüsseln/verifizieren** 
+um die Shasum-Datei zu verifizieren.
 
 0:10:23.040,0:10:26.480
-Finally we need to go back 
-into our `monero-mining` folder  
+Schließlich müssen wir zurückgehen 
+in unseren `monero-mining` Ordner  
 
 0:10:26.480,0:10:30.560
-and get the file hash for the 
-XMRig zip that we just downloaded.
+und holen uns den Datei-Hash für das 
+XMRig.zip, das wir gerade heruntergeladen haben.
 
 0:10:31.200,0:10:32.880
-Once again, shift+right click
+Noch einmal: Umschalt+Rechtsklick
 
 0:10:33.920,0:10:35.760
-Open powershell window here
+Öffne hier das Powershell-Fenster
 
 0:10:37.200,0:10:38.720
-Type `Get-Filehash`
+Gib `Get-Filehash` ein
 
 0:10:39.680,0:10:42.880
-and then the name of the file 
-you want to get the hash for.
-
-0:10:44.000,0:10:46.800
-This time it's the xmrig zip file,
+und dann den Namen der Datei 
+den Sie erhalten möchten
 
 0:10:46.800,0:10:49.360
-remember to press TAB to autocomplete.
+Denken Sie daran, TAB zu drücken, um automatisch zu vervollständigen.
 
 0:10:51.760,0:10:53.017
-There's our hash
+Das ist unsere Raute
 
 0:10:54.880,0:10:59.162
-Now we can open our text editor 
-and see if there's a match.
+Jetzt können wir unseren Texteditor öffnen 
+und sehen, ob es eine Übereinstimmung gibt.
 
 0:11:04.400,0:11:09.200
-As we can see that there's a match between 
-this line and the hash that we just generated.
+Wie wir sehen gibt es eine Übereinstimmung zwischen 
+dieser Zeile und dem Hash den wir erzeugt haben.
 
 0:11:10.240,0:11:14.640
-This means that the zip file is in fact 
-the one we were supposed to download  
+Das bedeutet, die Zip-Datei ist tatsächlich diejenige  Datei die wir herunterladen sollten  
 
 0:11:14.640,0:11:17.280
-and it should therefore be safe to use.
+und sollte somit auch sicher zu verwenden sein.
 
 0:11:17.280,0:11:21.120
-So let's go ahead and open 
-it and extract the contents.
+Also öffnen wir die Datei und 
+und extrahieren den Inhalt.
 
 0:11:23.280,0:11:28.560
-Before we go any further with our XMRig 
-setup, Let's check on the P2Pool software.
+Bevor wir mit unserer XMRig-Einrichtung weitermachen  sollten wir uns die P2Pool-Software ansehen.
 
 0:11:29.280,0:11:34.720
-It's taken around 8 hours for it to 
-sync on my machine and now that it has,  
+Es hat etwa 8 Stunden gedauert, bis sie 
+auf meinem Rechner synchronisiert  war,  
 
 0:11:34.720,0:11:36.720
-it is very important to reboot.
+danach ist es sehr wichtig, neu zu starten.
 
 0:11:37.360,0:11:39.680
-You'll find a timestamp in the description  
+In der Beschreibung findest du einen Zeitstempel  
 
 0:11:39.680,0:11:43.440
-so you can easily return to this 
-point in the video after rebooting.
+so dass nach einem Neustart, zur letztgesehene 
+Stelle des Videos zurückkehren können.
 
 0:11:50.080,0:11:50.800
-Welcome back.
+Willkommen zurück.
 
 0:11:51.520,0:11:55.840
-To continue getting XMRig set up, 
-head into the extracted folder.
+Um XMRig weiter einzurichten, 
+gehen Sie in den extrahierten Ordner.
 
 0:11:56.560,0:12:00.400
-We're going to run `benchmark_1M.cmd`,
+Wir werden `benchmark_1M.cmd` ausführen,
 
 0:12:01.280,0:12:04.880
-let it run all the way through to 
-make sure your system is stable.
+und lassen es komplett durchlaufen, um 
+sicherzustellen, dass Ihr System stabil ist.
 
 0:12:05.920,0:12:10.640
-While this is running it's a good chance 
-to check that `HUGE PAGES` is enabled.
+Während dies läuft, ist es eine gute Gelegenheit 
+zu überprüfen, ob `HUGE PAGES` aktiviert ist.
 
 0:12:10.640,0:12:14.080
-This is quite important and will 
-really improve your hash rate.
+Dies ist sehr wichtig und wird 
+Hash-Rate wirklich verbessern.
 
 0:12:15.280,0:12:17.680
-If it doesn't say `permission granted` there'll be  
+Wenn nicht "Erlaubnis erteilt" angezeigt wird, gibt es  
 
 0:12:17.680,0:12:21.178
-a link down in the description 
-to help you solve this problem.
+einen Link unten in der Beschreibung 
+um Ihnen bei der Lösung dieses Problems zu helfen.
 
 0:12:24.560,0:12:27.600
-Once that's complete your 
-hashrate can be found here.
+Sobald das erledigt ist, kann Ihre 
+Hash-Rate  hier gefunden werden.
 
 0:12:28.640,0:12:32.752
-Mine says 2157h/s.
+Meine sagt 2157h/s.
 
 0:12:33.360,0:12:36.960
-Take note of your hashrate as 
-you'll need it in just a moment.
+Notieren Sie sich Ihre Hashrate, denn 
+Sie werden sie gleich brauchen.
 
 0:12:37.520,0:12:42.080
-To make sure XMRig is using the 
-correct configuration when it runs,  
+Um sicherzustellen, dass XMRig die richtige 
+korrekte Konfiguration verwendet, wenn es läuft,  
 
 0:12:42.080,0:12:44.640
-datahoarder has kindly put one together for us.
+hat datahoarder freundlicherweise eine für uns zusammengestellt.
 
 0:12:45.200,0:12:48.560
-It's the config.json file we downloaded earlier.
+Das ist die Datei config.json, die wir vorhin heruntergeladen haben.
 
 0:12:49.760,0:12:53.040
-But we need to make one slight 
-tweak before we continue.
+Aber wir müssen noch eine kleine 
+Änderung vornehmen, bevor wir fortfahren.
 
 0:12:54.080,0:12:58.931
-In the user section we curently have "x+600000".
+In der Benutzer-Sektion haben wir derzeit "x+600000".
 
 0:12:59.360,0:13:04.320
-We should replace that number with 
-one equal to 30x your hash rate.
+Wir sollten diese Zahl ersetzen durch 
+eine Zahl, die dem 30-fachen der Hash-Rate entspricht.
 
 0:13:05.040,0:13:08.960
-For example my hashrate was 2157,
+Meine Hash-Rate war zum Beispiel 2157,
 
 0:13:08.960,0:13:11.280
-so I multiply that by 30
+also habe ich das mit 30 multipliziert
 
 0:13:12.560,0:13:17.360
-and I would put this number 64710 over here.
+und setze die Zahl 64710 hier ein.
 
 0:13:18.160,0:13:21.440
-We can now move this file into the xmrig folder.
+Jetzt können wir diese Datei in den Ordner xmrig verschieben.
 
 0:13:23.680,0:13:25.840
-Replace the file in the destination.
+Ersetzen Sie die Datei im Zielordner.
 
 0:13:27.760,0:13:31.987
-Let's also create a shortcut for 
-xmrig and place it on the desktop.
+Erstellen wir auch eine Verknüpfung für 
+xmrig und platzieren sie auf dem Desktop.
 
 0:13:39.840,0:13:43.520
-Alright, it's finally time 
-to get our mining underway.
+In Ordnung, es ist endlich Zeit 
+mit dem Mining zu beginnen.
 
 0:13:43.520,0:13:48.080
-So let's open p2pool by 
-clicking on the desktop icon.
+Öffnen wir also p2pool, indem wir 
+indem wir auf das Desktop-Symbol klicken.
 
 0:13:48.080,0:13:52.400
-We need to wait for it to finish 
-synchronising before we open XMRig.
+Wir müssen warten, bis es
+synchronisiert ist, bevor wir XMRig öffnen.
 
 0:13:53.360,0:13:59.648
-You will know it's synched once you start 
-receiving block templates and see `depth = 0`.
+Sie werden wissen, dass es synchronisiert ist, wenn Sie  
+Blockvorlagen empfangen und `depth = 0` sehen.
 
 0:14:00.347,0:14:02.362
-Finally we can run XMRig.
+Endlich können wir XMRig starten.
 
 0:14:03.040,0:14:05.600
-Make sure you do this as an administrator.
+Stellen Sie sicher, dass Sie dies als Administrator tun.
 
 0:14:06.160,0:14:10.480
-Otherwise you'll see this 
-`FAILED TO APPLY MSR MOD` error.
+Andernfalls werden Sie folgendes sehen 
+Fehler `FAILED TO APPLY MSR MOD`.
 
 0:14:11.200,0:14:15.600
-This will negatively impact your 
-hashrate and quite significantly.
+Dies wird sich negativ auf Ihre 
+Hashrate beeinflussen, und zwar ganz erheblich.
 
 0:14:15.600,0:14:20.240
-Again, do make sure that `HUGE 
-PAGES` says `permission granted`.
+Nochmals: Stellen Sie sicher, dass `HUGE 
+PAGES" auf "Erlaubnis erteilt" steht.
 
 0:14:20.240,0:14:23.262
-If it doesn't, check the link 
-in the description for help.
+Wenn das nicht der Fall ist, finden Sie unter dem Link 
+in der Beschreibung nach Hilfe.
 
 0:14:30.080,0:14:33.840
-To check that all you've done is actually 
-paying off, there's a few things you can do.
+Um zu überprüfen, ob sich Ihre Arbeit sich tatsächlich auszahlt , können Sie ein paar Dinge tun.
 
 0:14:34.480,0:14:38.400
-Firstly, xmrig should be recieving 
-jobs from your local ip address.
+Erstens: xmrig sollte Aufträge von 
+Ihrer lokalen IP-Adresse empfangen.
 
 0:14:39.120,0:14:43.920
-Secondly you can use console commands 
-when in the p2pool terminal window.
+Zweitens können Sie  
+im Terminalfenster befehle von p2pool verwenden.
 
 0:14:43.920,0:14:49.520
-`status` will print the status of the side 
-chain, your stratum server and the p2pserver.
+`status` gibt den Status der Seiten chain, Ihres Stratum-Servers und des p2pserver aus.
 
 0:14:50.160,0:14:55.680
-If everything went well you should see at least 
-1 connection under the stratumserver subheading.
+Wenn alles gut gelaufen ist, sollte mindestens 
+1 Verbindung in Unterrubrik stratumserver stehen.
 
 0:14:55.680,0:14:58.400
-It should also report your estimated hash rate.
+Es sollte auch Ihre geschätzte Hash-Rate angezeigt werden.
 
 0:14:59.680,0:15:05.040
-As p2pool uses a pplns system you are 
-only paid for your effort if you have  
+Da p2pool ein pplns-System verwendet, werden Sie 
+nur für Ihren Aufwand  bezahlt der für einen 
 
 0:15:05.040,0:15:07.680
-a share in this window when a block is minted.
+gelösten Block aufgebraucht wurde.
 
 0:15:08.240,0:15:10.560
-For more information about PPLNS,  
+Für weitere Informationen über PPLNS,  
 
 0:15:10.560,0:15:14.000
-please read the blog post by NiceHash 
-linked below in the comments.
+lesen Sie bitte den Blogbeitrag von NiceHash 
+der unten in den Kommentaren verlinkt ist.
 
 0:15:16.080,0:15:20.000
-Under the sidechain heading you will see 
-the number of shares you've submitted and  
+Unter der Rubrik Sidechain sehen Sie 
+die Anzahl der Anteile, die Sie eingereicht haben und  
 
 0:15:20.000,0:15:23.840
-an approximation of the reward you will 
-receive once a block has been minted.
+eine Annäherung an die Belohnung, die Sie 
+erhalten, sobald ein Block geprägt wurde.
 
 0:15:24.560,0:15:29.280
-As we haven't submitted any shares this 
-session there is no information available.
+Da wir in dieser Sitzung noch keine Anteile eingereicht haben, sind noch  keine Informationen verfügbar.
 
 0:15:31.040,0:15:33.520
-Other commands can be found by typing `help`.
+Andere Befehle können durch Eingabe von `help` gefunden werden.
 
 0:15:34.240,0:15:38.080
-For example you can set `loglevel` 
-which will change how much is being  
+Sie können zum Beispiel einstellen 
 
 0:15:38.080,0:15:41.360
-logged out if you find the 
-interface a bit too crowded.
+abmelden, wenn Ihnen die 
+Schnittstelle ein bisschen zu voll ist.
 
 0:15:42.960,0:15:46.080
-Log level 2 is a comfortable 
-setting for most people.
+Log-Stufe 2 ist eine bequeme 
+Einstellung für die meisten Leute.
 
 0:15:46.640,0:15:51.207
-To set it you can simply type 
-`loglevel 2` and hit enter.
+Um sie einzustellen, können Sie einfach `Loglevel 2` eingeben und auf Eingabetaste drücken.
 
 0:15:59.920,0:16:04.800
-There are two big incentives 
-for miners to join p2pool.
+Es gibt zwei große Anreize 
+für Miner, p2pool beizutreten.
 
 0:16:05.440,0:16:09.920
-First is the low payout threshold and 0% fees.
+Der erste ist die niedrige Auszahlungsschwelle und 0% Gebühren.
 
 0:16:10.800,0:16:15.600
-The other is the ability to sign 
-up to the xmrvsbeast raffle.
+Das andere ist die Möglichkeit, sich 
+für das xmrvsbeast-Gewinnspiel anzumelden.
 
 0:16:16.320,0:16:21.840
-If it's your first time hearig about the 
-xmrvsbeast raffle, here's what you need to know.
+Wenn du zum ersten Mal von der 
+xmrvsbeast-Verlosung hören, müssen Sie Folgendes wissen.
 
 0:16:23.200,0:16:28.720
-The raffle exists to incentivise miners, 
-especially those with low hashrates.
+Die Verlosung soll Anreize für Miner schaffen, 
+insbesondere diejenigen mit niedrigen Hashrates.
 
 0:16:29.360,0:16:32.160
-It currently does so by pointing large amounts of  
+Derzeit geschieht dies durch das Zeigen großer Mengen von  
 
 0:16:32.160,0:16:36.080
-hashing power to your node 
-for a given period of time.
+Hashing-Leistung auf Ihren Knoten 
+für einen bestimmten Zeitraum.
 
 0:16:36.080,0:16:40.080
-It started quite recently at the beggining of 2021  
+Es begann erst kürzlich, Anfang 2021  
 
 0:16:40.080,0:16:43.840
-and was set up by an 
-anonymous group or individual.
+und wurde von einer 
+anonymen Gruppe oder Einzelperson.
 
 0:16:43.840,0:16:49.520
-They started by setting up their own 
-pool but with the advent of the P2Pool,  
+Sie begannen mit der Einrichtung eines eigenen 
+Pool, aber mit dem Aufkommen des P2Pool,  
 
 0:16:49.520,0:16:55.920
-the xmrvsbeast pool was closed and all the 
-incentives moved to the P2Pool network.
+wurde der xmrvsbeast-Pool geschlossen und alle 
+Anreize wurden in das P2Pool-Netzwerk verlagert.
 
 0:16:57.760,0:17:00.080
-If you would like to take part in the raffle,  
+Wenn Sie an der Verlosung teilnehmen möchten,  
 
 0:17:00.080,0:17:04.240
-the next part of the video covers 
-port forwarding for this purpose.
+der nächste Teil des Videos behandelt 
+Portweiterleitung für diesen Zweck.
 
 0:17:06.960,0:17:11.680
-In order for the hashing power 
-of xmrvsbeast to reach your node  
+Damit die Hashing-Leistung 
+von xmrvsbeast deinen Knoten   
 
 0:17:11.680,0:17:15.200
-you will need to open up your 
-stratum server to the world.
+erreichen kann, müssen Sie Ihren 
+Stratum-Server für die Welt öffnen.
 
 0:17:16.000,0:17:18.240
-Port forwarding can be a tricky business,  
+Portweiterleitung kann eine knifflige Angelegenheit sein,  
 
 0:17:18.240,0:17:22.960
-but in general both your router and your 
-computer need to have this port forwarded.
+aber im Allgemeinen müsste Ihr Router als auch Ihr 
+Computer diesen Port weitergeleitet haben.
 
 0:17:23.520,0:17:28.720
-Since every router is different, we wont' be 
-covering port forwarding on routers in this video.
+Da jeder Router anders ist, werden in diesem Video nicht auf die Portweiterleitung bei Routern eingehen.
 
 0:17:29.575,0:17:32.295
-But for Windows, here's what we need to do:
+Aber für Windows müssen wir Folgendes tun:
 
 0:17:34.000,0:17:38.800
-Open the Windows start menu and 
-begin typing the word "Firewall".
+Öffnen Sie das Windows-Startmenü und 
+tippen Sie das Wort "Firewall" ein.
 
 0:17:38.800,0:17:40.480
-It should be the first result.  
+Es sollte das erste Ergebnis sein.  
 
 0:17:41.760,0:17:46.880
-Once here, click on **Advanced 
-Settings** then choose **Inbound Rules**.
+Klicken Sie **Erweiterte Einstellungen** 
+und wählen Sie dann **Eingangsregeln**.
 
 0:17:48.640,0:17:49.680
-Create a new rule.
+Erstellen Sie eine neue Regel.
 
 0:17:51.600,0:17:53.120
-This rule is for a port.
+Diese Regel ist für einen Port.
 
 0:17:54.480,0:17:55.760
-Click Next.
+Klicken Sie auf Weiter.
 
 0:17:55.760,0:17:56.880
-We want TCP
+Wir wollen TCP
 
 0:17:57.600,0:18:01.360
-and then the port number which is 3333.
+und dann die Portnummer, die 3333 ist.
 
 0:18:02.080,0:18:03.280
-Allow the connection.
+Erlauben Sie die Verbindung.
 
 0:18:03.920,0:18:05.280
-Finally, click next
+Klicken Sie schließlich auf Weiter
 
 0:18:06.400,0:18:11.360
-give it a name, I'll be calling 
-it stratum, and that's it.
+gib einen Namen, ich nenne es 
+Stratum, das war's.
 
 0:18:11.360,0:18:17.120
-We've opened port 3333 which is the default 
-port of your default Stratum server.
+Wir haben Port 3333 geöffnet, der auch der 
+Standard Port des Standard-Stratum-Servers ist.
 
 0:18:17.920,0:18:29.280
-It's also recommended to open ports 18080 
-(Monero daemon) and 37889 (P2Pool Peer Network)
+Empfohlen ist auch, Ports 18080 (Monero Daemon)
+und 37889 (P2Pool Peer Network) zu öffnen.
 
 0:18:29.280,0:18:32.560
-for better connectivity with 
-the rest of the network.
+für eine bessere Konnektivität mit 
+dem Rest des Netzwerks.
 
 0:18:32.560,0:18:34.640
-Although this is not mandatory.
+Dies ist jedoch nicht zwingend erforderlich.
 
 0:18:42.160,0:18:44.880
-Once you have the correct port forwarded
+Sobald Sie den richtigen Port weitergeleitet haben
 
 0:18:44.880,0:18:49.840
-you'll need to head on over to the 
-xmrvsbeast website linked in the description.
+müssen Sie sich auf die xmrvsbeast-Website anmelden,
+die in der Beschreibung verlinkt ist.
 
 0:18:51.360,0:18:54.720
-At the bottom of the landing page 
-you'll find some useful links.
+Am Ende der Landing Page 
+finden Sie einige nützliche Links.
 
 0:18:55.520,0:19:00.080
-The first is the boost dashboard. 
-As well as a raffle, there is also  
+Der erste ist das Boost-Dashboard. 
+Neben einem Gewinnspiel gibt es auch  
 
 0:19:00.080,0:19:06.160
-a boost system which provides bonus hashrate 
-to miners sequentially rather than randomly.
+ein Boost-System, das Hashrate an Miner nacheinander
+ und nicht zufällig vergibt.
 
 0:19:06.160,0:19:11.280
-So regardless of your luck you can always 
-expect a little boost from time to time.
+Unabhängig von Ihrem Glück können Sie immer 
+von Zeit zu Zeit einen kleinen Boost erwarten.
 
 0:19:11.280,0:19:15.360
-The second link explains in more 
-detail the rules of the raffle  
+Der zweite Link erklärtdie Regeln des
+Gewinnspiels genauer  
 
 0:19:15.360,0:19:20.240
-and provides a page to register which 
-we will be heading to in a moment.
+und bietet eine Seite zur Anmeldung, die 
+wir gleich aufrufen werden.
 
 0:19:20.240,0:19:24.160
-As well as a page for viewing your 
-history as a raffle participant.
+Sowie eine Seite, auf der Sie Ihre 
+???????Geschichte als Gewinnspielteilnehmer.
 
 0:19:25.000,0:19:27.363
-Select register/update.
+Wählen Sie Registrieren/Aktualisieren.
 
 0:19:28.000,0:19:31.760
-This is where you enter the 
-information required to find your node.
+Hier geben Sie die Informationen ein
+um Ihren Knoten zu finden.
 
 0:19:32.480,0:19:36.480
-This includes your monero address 
-which is used to manage the raffle,  
+Dies beinhaltet Ihre Monero-Adresse die
+verwendet wird, um die Verlosung zu verwalten,  
 
 0:19:36.480,0:19:40.400
-your public ip address and 
-the port you have forwarded.
+Ihre öffentliche IP-Adresse und 
+den Port, den Sie weitergeleitet haben.
 
 0:19:41.200,0:19:45.120
-The token field should be left 
-blank for new registrations.
+Das Token-Feld sollte bei 
+eine neue Registrierungen leer bleiben.
 
 0:19:45.760,0:19:50.400
-If you don't know your public ip address 
-you can find it using the powershell  
+Ihre öffentliche IP-Adresse können Sie mit
+dem Befehl 'ipconfig' im Powershell oder 
 
 0:19:50.400,0:19:56.400
-and the command `ipconfig` or you can 
-more simply check on a 3rd party site.
+auf verschiedenen Webseiten
+von Drittanbieter herausfinden.
 
 0:19:57.040,0:20:03.360
-The websites of vpn providers such as mullvad 
-or nordvpn are great for this purpose.
+Webseiten von vpn-Anbietern wie mullvad oder
+nordvpn sind für diesen Zweck sehr gut geeignet.
 
 0:20:04.560,0:20:07.760
-A successful registration 
-should look something like this.
+Eine erfolgreiche Registrierung 
+sollte in etwa so aussehen.
 
 0:20:09.040,0:20:11.600
-Write down your token, this is important.
+Es ist wichtig ihren Toben aufzuschreiben.
 
 0:20:12.400,0:20:14.720
-We can check double check 
-our registration has been  
+Wir können doppelt prüfen 
+ob die Registrierung 
 
 0:20:14.720,0:20:18.000
-successful by heading over to the history page
+erfolgreich war, 
+indem wir auf die Historienseite gehen
 
 0:20:18.000,0:20:22.000
-and entering our XMR address and 
-the token we were issued with.
+und dort unsere XMR-Adresse und 
+Tokens eingeben, das wir erhalten haben.
 
 0:20:22.960,0:20:27.514
-If you have any troubles with this 
-step please head over to the xmrvsbeast                           
+Wenn Sie Probleme mit diesem Schritt haben,
+gehen Sie zum xmrvsbeast Subreddit
 
 0:20:27.600,0:20:31.520
-subreddit and search for 
-similar issues before posting.
+ und suchen Sie nach ähnlichen
+ Problemen, bevor Sie dort etwas posten.
 
 0:20:32.240,0:20:34.640
-A link to this can be found in the description.
+Ein Link dazu ist in der Beschreibung zu finden.
 
 0:20:41.280,0:20:46.880
-You can easily check your progress remotely 
-by visiting https://p2pool.observer/
+Ihren Fortschritt aus der ferne können sie 
+leicht auf https://p2pool.observer/ überprüfen.
 
 0:20:47.440,0:20:52.160
-Here you can use your monero address to 
-search and find your individual progress.
+Hier können mit Ihre Monero-Adresse 
+Ihren individuellen Fortschritt finden.
 
 0:20:53.276,0:20:56.156
-As we're new to mining we'll get an error.
+Da wir neu im Mining sind, bekommen wir eine Fehlermeldung.
 
 0:20:56.560,0:21:02.480
-Only once you have begun finding shares will you 
-see information about your miner and its progress.
+Erst wenn Sie Anteile gefunden wurden sehen Sie 
+Informationen über Ihren Miner und seinen Fortschritt.
 
 0:21:03.120,0:21:05.920
-To find out how often you may produce shares,
+Um herauszufinden, wie oft Sie Anteile produzieren,
 
 0:21:05.920,0:21:10.880
-head back to the main page and select 
-the average share time calculator,
+gehen Sie zurück zur Hauptseite, wählen Sie den
+Rechner für die durchschnittliche Produktionszeit,
 
 0:21:10.880,0:21:14.000
-punch in your hashrate and 
-you'll receive an estimate.
+geben Sie Ihre Hashrate ein und 
+Sie erhalten eine Schätzung.
 
 0:21:14.880,0:21:18.400
-Let's take a look at another 
-miners progress to see an example.
+Werfen wir einen Blick auf einen anderen 
+Miner-Fortschritt, um ein Beispiel zu sehen.
 
 0:21:19.680,0:21:24.160
-Here you can see statistics from 
-the miner including average effort,
+Hier sehen Sie die Statistiken des miners,
+einschließlich des durchschnittlichen Aufwands,
 
 0:21:24.160,0:21:26.960
-blocks found and share positions.
+gefundene Blöcke und Anteilspositionen.
 
 0:21:26.960,0:21:32.240
-Here the shares move from right to left 
-with time unlike the p2pool program.
+Anteile bewegen sich von rechts nach links 
+mit der Zeit im Gegensatz zum p2pool-Programm.
 
 0:21:32.240,0:21:35.440
-Below this you will see 
-information about each payout  
+Darunter sehen Sie 
+Informationen über jede Auszahlung  
 
 0:21:35.440,0:21:38.916
-and the shares which enabled 
-those payouts at the bottom.
+und die Aktien, die diese Auszahlungen 
+diese Auszahlungen ermöglicht haben.
 
 0:21:43.120,0:21:47.520
-This pool is only possible because 
-of the hard work of contributors.  
+Dieser Pool ist nur möglich durch 
+durch die harte Arbeit der Spender.  
 
 0:21:47.520,0:21:51.760
-The main repository for p2pool can 
-be found in the description below.
+Das Hauptrepository für p2pool finden Sie 
+ist in der Beschreibung unten zu finden.
 
 0:21:52.320,0:21:56.080
-If you're interested to know more 
-about it's features and how it works,  
+Wenn Sie mehr wissen wollen wie es 
+funktioniert und welche Funktionen es hat,  
 
 0:21:56.080,0:21:59.680
-including how to set things up on a different OS,
+und wie man es auf einem 
+anderen Betriebssystem einrichtet,
 
 0:21:59.680,0:22:01.156
-this is the place to come.
+hier ist der richtige Ort.
 
 0:22:01.600,0:22:05.440
-And at the bottom of this page 
-you will find a donation address.
+Und unten auf dieser Seite 
+finden Sie eine Spendenadresse.
 
 0:22:05.440,0:22:09.360
-The people who work on these things do 
-it mostly for love rather than money,  
+Die Menschen, die an diesen Projekte arbeiten, 
+tun es hauptsächlich aus Liebe, nicht für Geld,  
 
 0:22:09.360,0:22:12.480
-so every donation goes to keeping them motivated.
+Jede Spende dient also dazu, sie zu motivieren.
 
 0:22:13.440,0:22:19.356
-Well, that's all for this video. Thanks 
-so much for watching and happy mining.
+Nun, das war's mit diesem Video. Vielen Dank 
+fürs Zuschauen und viel Spaß beim Mining.
 
 0:22:20.462,0:22:22.369
 ~moneroguides
+Deutsche übersetzung: ZeoZ 
