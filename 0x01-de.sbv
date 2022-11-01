@@ -222,7 +222,7 @@ an die Sie Ihre geminte Monero empfangen möchten.
 
 0:05:36.320,0:05:41.360
 Nachdem die Einrichtung abgeschlossen ist,
-sehen Sie im `monero-mining` Ordner einen neuem Ordner.
+sehen Sie im `monero-mining` Ordner ein neuem Ordner.
 
 0:05:42.320,0:05:46.240
 Sie werden auch sehen, dass eine Verknüpfung 
@@ -567,14 +567,14 @@ Wir müssen warten, bis es
 synchronisiert ist, bevor wir XMRig öffnen.
 
 0:13:53.360,0:13:59.648
-Sie werden wissen, dass es synchronisiert ist, wenn Sie  
-Blockvorlagen empfangen und `depth = 0` sehen.
+Sie werden wissen, dass es synchronisiert ist,wenn
+Sie Blockvorlagen empfangen und `depth = 0` sehen.
 
 0:14:00.347,0:14:02.362
 Endlich können wir XMRig starten.
 
 0:14:03.040,0:14:05.600
-Stellen Sie sicher, dass Sie dies als Administrator tun.
+Stellen Sie sicher als Administrator dies zu tun.
 
 0:14:06.160,0:14:10.480
 Andernfalls werden Sie folgendes sehen 
@@ -638,10 +638,11 @@ eine Annäherung an die Belohnung, die Sie
 erhalten, sobald ein Block geprägt wurde.
 
 0:15:24.560,0:15:29.280
-Da wir in dieser Sitzung noch keine Anteile eingereicht haben, sind noch  keine Informationen verfügbar.
+Da wir noch keine Anteile eingereicht haben,
+sind noch  keine Informationen verfügbar.
 
 0:15:31.040,0:15:33.520
-Andere Befehle können durch Eingabe von `help` gefunden werden.
+Andere Befehle ashen Sie durch Eingabe von `help`.
 
 0:15:34.240,0:15:38.080
 Sie können zum Beispiel einstellen 
@@ -655,14 +656,16 @@ Log-Stufe 2 ist eine bequeme
 Einstellung für die meisten Leute.
 
 0:15:46.640,0:15:51.207
-Um sie einzustellen, können Sie einfach `Loglevel 2` eingeben und auf Eingabetaste drücken.
+Um sie einzustellen, können Sie einfach `Loglevel 2` 
+eingeben und auf Eingabetaste drücken.
 
 0:15:59.920,0:16:04.800
 Es gibt zwei große Anreize 
 für Miner, p2pool beizutreten.
 
 0:16:05.440,0:16:09.920
-Der erste ist die niedrige Auszahlungsschwelle und 0% Gebühren.
+Der erste ist die niedrige Auszahlungsschwelle
+und 0% Gebühren.
 
 0:16:10.800,0:16:15.600
 Das andere ist die Möglichkeit, sich 
@@ -721,7 +724,8 @@ aber im Allgemeinen müsste Ihr Router als auch Ihr
 Computer diesen Port weitergeleitet haben.
 
 0:17:23.520,0:17:28.720
-Da jeder Router anders ist, werden in diesem Video nicht auf die Portweiterleitung bei Routern eingehen.
+Da jeder Router anders ist, wird hier auf die 
+Portweiterleitung eingegangen.
 
 0:17:29.575,0:17:32.295
 Aber für Windows müssen wir Folgendes tun:
@@ -882,7 +886,7 @@ Hier können mit Ihre Monero-Adresse
 Ihren individuellen Fortschritt finden.
 
 0:20:53.276,0:20:56.156
-Da wir neu im Mining sind, bekommen wir eine Fehlermeldung.
+Da wir neu sind, bekommen wir eine Fehlermeldung.
 
 0:20:56.560,0:21:02.480
 Erst wenn Sie Anteile gefunden wurden sehen Sie 
