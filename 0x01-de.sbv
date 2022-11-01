@@ -25,7 +25,7 @@ Wir haben einen Link dafür
 weiter unten in der Beschreibung.
 
 0:00:36.800,0:00:39.440
-Sie benötigen außerdem eine Monero-Wallet-Adresse.
+Sie benötigen außerdem eine Monero-Adresse.
 
 0:00:39.440,0:00:44.000
 Damit P2Pool die Möglichkeit hat 
@@ -36,7 +36,7 @@ Zu guter Letzt benötigen Sie mindestens
  50 GB freien Speicherplatz.
 
 0:00:49.040,0:00:52.640
-Diese Anleitung setzt keine Erfahrung im mining voraus.
+Die Anleitung setzt keine mining Erfahrung voraus.
 
 0:00:52.640,0:00:57.920
 Wenn Sie bereits xmrig und/oder die 
@@ -67,11 +67,12 @@ Daher müssen wir eine
 Ausschlussregel für den Ordner erstellen.
 
 0:01:26.240,0:01:30.560
-Dazu müssen wir zu den 
-Einstellungen für den Viren- und Bedrohungsschutz.
+Dazu müssen wir zu den Einstellungen 
+für den Viren- und Bedrohungsschutz.
 
 0:01:30.560,0:01:36.800
-Sie können diese Einstellungen finden, indem Sie in die Suchleiste oder Startmenü `Virus` eingeben .
+Diese Einstellungen finden indem Sie in die
+Suchleiste oder Startmenü `Virus` eingeben.
 
 0:01:37.600,0:01:41.200
 Als nächstes wählen Sie **Viren- und 
@@ -81,8 +82,8 @@ Einstellungen für Bedrohungsschutz**,
 klicken Sie auf **Einstellungen verwalten**.
 
 0:01:43.200,0:01:49.280
-Scrollen Sie nach unten, bis Sie den Abschnitt **Ausschlüsse** 
-Abschnitt und wählen Sie **Ausschlüsse hinzufügen oder entfernen**.
+Scrollen Sie runter bis **Ausschlüsse** und
+wählen **Ausschlüsse hinzufügen oder entfernen**.
 
 0:01:50.096,0:01:51.696
 Klicken Sie auf **Einen Ausschluss hinzufügen**,  
@@ -92,8 +93,8 @@ wählen Sie **Ordner** und navigieren Sie  zu
  dem Ordner den Sie gerade erstellt haben.
 
 0:02:06.320,0:02:09.760
-Ein Link zu dem erforderlichen Installationsprogramm 
-zum Einrichten Ihres Knotens und einen  
+Ein Link zu dem erforderlichen Installations-
+programm zum Einrichten Ihres Knotens und eine
 
 0:02:09.760,0:02:13.760
 Verbindung zur P2Pool Sidechain 
@@ -103,8 +104,8 @@ ist in der Beschreibung zu finden.
 Sobald Sie die neueste Version gefunden haben,  
 
 0:02:16.720,0:02:22.480
-scrollen Sie zu den Assets und laden Sie den Installer,
- die Shasums und die Standardkonfiguration herunter.
+gehen Sie zu den Assets und laden den Installer,
+Shasums und die Standardkonfiguration herunter.
 
 0:02:25.600,0:02:29.120
 Der öffentliche Schlüssel von Datahoarder  
@@ -118,43 +119,45 @@ den öffentlichen Schlüssel in den Editor.
 Wir können ihn als `key.txt` speichern.
 
 0:02:52.080,0:02:54.320
-Dann müssen wir Kleopatra öffnen
+Dann müssen wir Kleopatra öffnen und den 
 
 0:02:56.080,0:02:58.988
-und den Schlüssel importieren, den wir gerade kopiert haben.
+Schlüssel importieren, den wir kopiert haben.
 
 0:03:08.718,0:03:14.408
-Achten Sie darauf, dass Sie in **beliebige Dateien** auswählen, um die Datei "key.txt" sehen zu können.  
+Wählen sie **beliebige Dateien** um die
+Datei "key.txt" sehen zu können.  
 
 0:03:18.960,0:03:21.360
-Es ist nicht notwendig, die Datei als vertrauenswürdig zu signieren.  
+Nicht wichtig als vertrauenswürdig zu signieren,
 
 0:03:22.400,0:03:26.880
-Das Wichtigste ist, dass ein Zertifikat zu sehen ist 
-das mit dem Schlüssel von datahoarder übereinstimmt.
+Wichtig ist, dass ein Zertifikat zu sehen ist 
+das mit datahoarders Schlüssel übereinstimmt.
 
 0:03:31.280,0:03:33.600
-Als nächstes wollen wir die checksum Datei verifizieren.  
+Als nächstes verifizieren wir die checksum Datei.  
 
 0:03:36.080,0:03:42.086
-Klicken Sie auf **entschlüsseln/verifizieren** und 
-navigieren Sie zu der heruntergeladene sha-Datei.
+auf **entschlüsseln/verifizieren** Klicken und 
+gehen Sie zu der heruntergeladene sha-Datei.
 
 0:03:52.880,0:03:57.360
 Wir können sehen, dass der Name auf dem Zertifikat 
 mit dem importierten Schlüssel übereinstimmt.
 
 0:03:59.440,0:04:04.560
-Zur Überprüfung, ob es sich tatsächlich die Datei ist, die wir  installieren wollen, und nicht etwas schädliches,
+Zur Überprüfung, ob es sich tatsächlich die
+Datei ist, die wir installieren wollen.
 
 0:04:05.120,0:04:07.760
-gehen wir zurück zu unserem `monero-mining` Ordner,
+Zurück zu unserem `monero-mining` Ordner,
 
 0:04:08.800,0:04:10.320
 Umschalt + Rechtsklick".
 
 0:04:11.280,0:04:13.840
-und wählen **Open powershell here**.
+und  **Open powershell here** wählen.
 
 0:04:15.680,0:04:17.856
 Gib `Get-Filehash` ein
@@ -164,7 +167,8 @@ und dann den Namen der Datei
 für die Sie den Hash erhalten möchten,
 
 0:04:21.680,0:04:24.160
-das ist in diesem Fall das P2Pool-Installationsprogramm.  
+das ist in diesem Fall das 
+P2Pool-Installationsprogramm.  
 
 0:04:24.800,0:04:29.200
 Zum Glück müssen wir nicht alles eingeben. 
@@ -182,14 +186,15 @@ und wir bekommen den Hash der Datei.
 
 0:04:41.680,0:04:47.040
 Wir können nun die shasum-Datei öffnen und den 
-den Hash mit dem gerade erzeugten Hash vergleichen.
+den Hash mit dem gerade erzeugten vergleichen.
 
 0:04:48.720,0:04:53.280
-Klicken Sie mit der rechten Maustaste und öffnen Sie 
-einen Texteditor Ihrer Wahl.
+Klicken Sie mit der rechten Maustaste und öffnen 
+Sie einen Texteditor Ihrer Wahl.
 
 0:04:55.040,0:04:58.880
-Wir können sehen, dass dieser Hash mit dieser Zeile hier übereinstimmt.
+Wir können sehen, dass dieser Hash mit dieser
+Zeile hier übereinstimmt.
 
 0:04:59.520,0:05:03.219
 Das bedeutet, dass wir eine Übereinstimmung haben 
@@ -200,11 +205,12 @@ In Ordnung, jetzt, da wir das getan haben
 ist es nun an der Zeit, P2Pool zu installieren.
 
 0:05:16.400,0:05:20.560
-Rechte Maustaste auf die Installationsdatei klicken  und **Ausführen als Administrator** wählen.
+Rechte Maustaste auf die Installationsdatei 
+klicken  und **Ausführen als Administrator** wählen.
 
 0:05:22.000,0:05:26.080
-Klicken Sie auf **Weiter**, bis Sie zu dem Teil kommen 
-wo Sie den Installationsort auswählen.
+Klicken Sie auf **Weiter**, bis Sie zu dem Teil 
+kommen wo Sie den Installationsort auswählen.
 
 0:05:27.040,0:05:29.760
 Installieren Sie es in denselben Ordner 
@@ -215,7 +221,8 @@ Sie benötigen nun eine neue Monero-Wallet-Adresse
 an die Sie Ihre geminte Monero empfangen möchten.
 
 0:05:36.320,0:05:41.360
-Nachdem die Einrichtung abgeschlossen ist, sehen Sie im `monero-mining` Ordner einen neuem Ordner.
+Nachdem die Einrichtung abgeschlossen ist,
+sehen Sie im `monero-mining` Ordner einen neuem Ordner.
 
 0:05:42.320,0:05:46.240
 Sie werden auch sehen, dass eine Verknüpfung 
@@ -225,22 +232,23 @@ auf eurem Desktop erscheint.
 So starten wir die P2Pool-Software.
 
 0:05:56.880,0:06:02.320
-Wenn Sie die Monero-Blockchain bereits wegen eines lokalen Knotens oder einer Wallet haben,  
+Wenn Sie die Monero-Blockchain bereits wegen
+eines lokalen Knotens oder einer Wallet haben,  
 
 0:06:02.320,0:06:04.320
-fahren Sie fort und springen Sie zum nächsten Abschnitt.
+Springen Sie zum nächsten Abschnitt.
 
 0:06:05.200,0:06:10.320
 Für alle anderen, folgen Sie diesem Abschnitt 
-sorgfältig und überspringt den nächsten Abschnitt.
+sorgfältig und überspringt den nächsten.
 
 0:06:11.920,0:06:16.400
 Bevor Sie P2Pool starten, müssen Sie sicherstellen 
 dass Sie genügend Platz auf Ihrem Laufwerk haben.
 
 0:06:17.200,0:06:22.480
-Während der Ersteinrichtung erstellen wir 
-eine Datei, die leicht 40 GB überschreiten kann.
+Während der Ersteinrichtung erstellen wir eine
+Datei, die leicht 40 GB überschreiten kann.
 
 0:06:24.080,0:06:25.920
 Wenn Sie damit einverstanden sind, sollten Sie  
