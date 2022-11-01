@@ -251,25 +251,29 @@ Während der Ersteinrichtung erstellen wir eine
 Datei, die leicht 40 GB überschreiten kann.
 
 0:06:24.080,0:06:25.920
-Wenn Sie damit einverstanden sind, sollten Sie  
+Wenn Sie einverstanden sind,
+sollten Sie weiter machen 
 
 0:06:25.920,0:06:30.160
-??????????yyyyyP2Pool durch einen Doppelklick auf das 
-Symbol, das gerade erstellt wurde.
+Instalieren She P2Pool durch einen Doppelklick
+auf das Symbol, das gerade erstellt wurde.
 
 0:06:31.760,0:06:37.600
-Wir synchronisieren jetzt eine Datenbankdatei, die sich im Ordner 
-ẞßßßßßßßßp2pool-Ordner mit der Monero-Blockchain.
+Wir synchronisieren jetzt eine Datenbankdate im
+p2pool-Ordner mit der Monero-Blockchain.
 
 0:06:38.320,0:06:43.600
-Dies kann mehrere Stunden dauern, in der Zwischenzeit können sie weiter andere Teilen einrichten.
+Dies kann mehrere Stunden dauern, in der 
+Zwischenzeit können sie andere Teilen einrichten.
 
 0:06:44.640,0:06:48.000
-Wenn Sie die Schritte in diesem Abschnitt befolgt habt, ist es nicht nötig den nächsten Abschnitt mit dem Titel:
+Wenn Sie diesem Abschnitt befolgt habt, ist es
+nicht nötig den nächsten den  Abschnitt:
 
 0:06:48.000,0:06:52.720
  
-**IMPORTIEREN EINER BEREITS VORHANDENEN BLOCKCHAIN**durchzuführen.
+**IMPORTIEREN EINER BEREITS VORHANDENEN BLOCKCHAIN**
+durchzuführen.
 
 0:06:53.520,0:06:59.841
 Sie können also den nächsten Abschnitt überspringen 
@@ -284,7 +288,8 @@ haben Sie zwei Möglichkeiten.
 Die erste Möglichkeit wäre
 
 0:07:15.360,0:07:21.120
-die Dateien in den in das Verzeichnis p2pool/lmdb zu kopieren oder zu verschieben.
+die Dateien ins Verzeichnis p2pool/lmdb 
+zu kopieren oder verschieben.
 
 0:07:21.920,0:07:30.249
 Sie finden den bereits existierenden 
@@ -299,10 +304,11 @@ Wenn Sie die Blockchain-Datei nicht verschieben oder
 hinzu kopieren möchten,  
 
 0:07:42.400,0:07:45.520
-können Sie p2pool einfach mitteilen, wo sie zu finden  ist.
+können Sie p2pool einfach zeigen, wo sie  ist.
 
 0:07:46.560,0:07:50.240
-Klicken Sie dazu mit der rechten Maustaste auf die Datei start.ps1,
+Klicken Sie dazu mit der rechten Maustaste
+auf die Datei start.ps1,
 
 0:07:51.520,0:07:52.897
 wählen Sie editieren,
@@ -325,13 +331,14 @@ Jetzt können wir speichern und schließen
 
 0:08:21.680,0:08:25.188
 Wenn wir nun das Symbol auf dem 
- Desktop verwenden, um p2pool zu starten,  
+Desktop verwenden, um p2pool zu starten,  
 
 0:08:25.200,0:08:28.000
-wird es die bereits existierenden Blockchain-Datei verwenden.
+wird es die  existierende Blockchain-Datei verwenden.
 
 0:08:29.200,0:08:33.881
-Das bedeutet, dass Sie nur kurz warten müssen, während die neuesten Blöcke synchronisiert werden.
+Das bedeutet, dass Sie nur kurz warten müssen,
+während die neuesten Blöcke synchronisiert werden.
 
 0:08:41.680,0:08:46.800
 Nun ist es an der Zeit, XMrig zu installieren. Wenn 
@@ -360,21 +367,23 @@ Vergessen Sie nicht, auch die beiden
 Checksum-Dateien herunterzuladen.
 
 0:09:14.480,0:09:16.800
-Der Einfachheit halber werden wir diese Dateien in den selben Ordner herunterladen  
+Der Einfachheit halber werden wir diese 
+Dateien in den selben Ordner herunterladen  
 
 0:09:16.800,0:09:19.920
- in dem wir bis jetzt gearbeitet haben.
+in dem wir bis jetzt gearbeitet haben.
 
 0:09:21.520,0:09:24.800
-Wir verifizieren den 
-Download auf die gleiche Weise wie zuvor  
+Wir verifizieren den Download 
+auf die gleiche Weise wie zuvor  
 
 0:09:24.800,0:09:28.000
 also werde ich den Prozess dieses Mal 
 etwas schneller durchführen.
 
 0:09:28.960,0:09:33.360
-Der öffentliche Schlüssel für xmrig befindet sich an einem  anderen Ort als die Dateien,
+Der öffentliche Schlüssel für xmrig befindet sich
+an einem  anderen Ort als die Dateien,
 
 0:09:34.160,0:09:36.180
 Der Link ist in der Videobeschreibung zu finden.
@@ -422,7 +431,7 @@ und dann den Namen der Datei
 den Sie erhalten möchten
 
 0:10:46.800,0:10:49.360
-Denken Sie daran, TAB zu drücken, um automatisch zu vervollständigen.
+Einfach TAB  drücken, um automatisch zu vervollständigen.
 
 0:10:51.760,0:10:53.017
 Das ist unsere Raute
@@ -436,7 +445,8 @@ Wie wir sehen gibt es eine Übereinstimmung zwischen
 dieser Zeile und dem Hash den wir erzeugt haben.
 
 0:11:10.240,0:11:14.640
-Das bedeutet, die Zip-Datei ist tatsächlich diejenige  Datei die wir herunterladen sollten  
+Das bedeutet, die Zip-Datei ist tatsächlich
+diejenige  Datei die wir herunterladen sollten  
 
 0:11:14.640,0:11:17.280
 und sollte somit auch sicher zu verwenden sein.
@@ -446,7 +456,8 @@ Also öffnen wir die Datei und
 und extrahieren den Inhalt.
 
 0:11:23.280,0:11:28.560
-Bevor wir mit unserer XMRig-Einrichtung weitermachen  sollten wir uns die P2Pool-Software ansehen.
+Bevor wir mit unserer XMRig-Einrichtung weitermachen 
+sollten wir uns die P2Pool-Software ansehen.
 
 0:11:29.280,0:11:34.720
 Es hat etwa 8 Stunden gedauert, bis sie 
@@ -507,10 +518,11 @@ Um sicherzustellen, dass XMRig die richtige
 korrekte Konfiguration verwendet, wenn es läuft,  
 
 0:12:42.080,0:12:44.640
-hat datahoarder freundlicherweise eine für uns zusammengestellt.
+hat datahoarder eine für uns zusammengestellt.
 
 0:12:45.200,0:12:48.560
-Das ist die Datei config.json, die wir vorhin heruntergeladen haben.
+Das ist die Datei config.json
+die wir vorhin heruntergeladen haben.
 
 0:12:49.760,0:12:53.040
 Aber wir müssen noch eine kleine 
@@ -533,7 +545,7 @@ also habe ich das mit 30 multipliziert
 und setze die Zahl 64710 hier ein.
 
 0:13:18.160,0:13:21.440
-Jetzt können wir diese Datei in den Ordner xmrig verschieben.
+Jetzt können wir die Datei in den Ordner xmrig verschieben.
 
 0:13:23.680,0:13:25.840
 Ersetzen Sie die Datei im Zielordner.
@@ -581,25 +593,27 @@ Wenn das nicht der Fall ist, finden Sie unter dem Link
 in der Beschreibung nach Hilfe.
 
 0:14:30.080,0:14:33.840
-Um zu überprüfen, ob sich Ihre Arbeit sich tatsächlich auszahlt , können Sie ein paar Dinge tun.
+Um zu überprüfen, ob sich Ihre Arbeit sich 
+tatsächlich auszahlt, können Sie ein paar Dinge tun.
 
 0:14:34.480,0:14:38.400
 Erstens: xmrig sollte Aufträge von 
 Ihrer lokalen IP-Adresse empfangen.
 
 0:14:39.120,0:14:43.920
-Zweitens können Sie  
-im Terminalfenster befehle von p2pool verwenden.
+Zweitens können Sie im Terminalfenster
+p2pool befehle verwenden.
 
 0:14:43.920,0:14:49.520
-`status` gibt den Status der Seiten chain, Ihres Stratum-Servers und des p2pserver aus.
+`status` gibt den Status der Seiten chain, 
+Ihres Stratum-Servers und des p2pserver aus.
 
 0:14:50.160,0:14:55.680
 Wenn alles gut gelaufen ist, sollte mindestens 
 1 Verbindung in Unterrubrik stratumserver stehen.
 
 0:14:55.680,0:14:58.400
-Es sollte auch Ihre geschätzte Hash-Rate angezeigt werden.
+und geschätzte Hash-Rate sollte angezeigt werden.
 
 0:14:59.680,0:15:05.040
 Da p2pool ein pplns-System verwendet, werden Sie 
