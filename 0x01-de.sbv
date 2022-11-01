@@ -1,0 +1,969 @@
+0:00:04.800,0:00:10.240
+Hallo und willkommen zum Tutorial wie man
+P2Pool installiert um Monero zu minen.
+
+0:00:10.880,0:00:15.120
+P2Pool ist ein dezentraler Pool 
+der eine Seiten Chain nutzt um 
+
+0:00:15.120,0:00:17.840
+aktive miner und deren gewinne zu regulieren.
+
+0:00:18.560,0:00:25.440
+Um Monero P2Pool beizutreten alles was ihr tun 
+müsst ist die p2pool und Xmrig Software laufen.
+
+0:00:26.320,0:00:30.240
+Bevor Sie loslegen, gibt es 
+gibt es ein paar Voraussetzungen:
+
+0:00:30.240,0:00:33.760
+Erstens müssen Sie Kleopatra installiert haben
+
+0:00:33.760,0:00:36.240
+Wir haben einen Link dafür 
+weiter unten in der Beschreibung.
+
+0:00:36.800,0:00:39.440
+Sie benötigen außerdem eine Monero-Adresse.
+
+0:00:39.440,0:00:44.000
+Damit P2Pool die Möglichkeit hat 
+Ihnen wertvolle Monero zu schicken.
+
+0:00:44.000,0:00:48.160
+Zu guter Letzt benötigen Sie mindestens 
+ 50 GB freien Speicherplatz.
+
+0:00:49.040,0:00:52.640
+Die Anleitung setzt keine mining Erfahrung voraus.
+
+0:00:52.640,0:00:57.920
+Wenn Sie bereits xmrig und/oder die 
+neueste Version des Monero-Daemons haben,  
+
+0:00:57.920,0:01:02.000
+können sie nur die  die P2Pool-Einrichtung
+ ansehen und den Rest überspringen.
+
+0:01:06.240,0:01:09.520
+Bevor wir etwas tun, müssen wir 
+einen Ordner namens  'monero-mining'
+
+0:01:09.520,0:01:14.000
+in unserem Stammverzeichnis  Verzeichnis
+ auf dem Laufwerk `C:` kreieren.
+
+0:01:14.000,0:01:17.280
+Wir werden von nun an alles in 
+diesem Verzeichnis machen.
+
+0:01:18.080,0:01:22.320
+Windows könnte Xmrig in den nächsten 
+Schritten als Virus verwechseln,  
+
+0:01:22.320,0:01:26.240
+Daher müssen wir eine 
+Ausschlussregel für den Ordner erstellen.
+
+0:01:26.240,0:01:30.560
+Dazu müssen wir zu den Einstellungen 
+für den Viren- und Bedrohungsschutz.
+
+0:01:30.560,0:01:36.800
+Diese Einstellungen finden indem Sie in die
+Suchleiste oder Startmenü `Virus` eingeben.
+
+0:01:37.600,0:01:41.200
+Als nächstes wählen Sie **Viren- und 
+Einstellungen für Bedrohungsschutz**,
+
+0:01:41.200,0:01:43.200
+klicken Sie auf **Einstellungen verwalten**.
+
+0:01:43.200,0:01:49.280
+Scrollen Sie runter bis **Ausschlüsse** und
+wählen **Ausschlüsse hinzufügen oder entfernen**.
+
+0:01:50.096,0:01:51.696
+Klicken Sie auf **Einen Ausschluss hinzufügen**,  
+
+0:01:52.240,0:01:58.960
+wählen Sie **Ordner** und navigieren Sie  zu
+ dem Ordner den Sie gerade erstellt haben.
+
+0:02:06.320,0:02:09.760
+Ein Link zu dem erforderlichen Installations-
+programm zum Einrichten Ihres Knotens und eine
+
+0:02:09.760,0:02:13.760
+Verbindung zur P2Pool Sidechain 
+ist in der Beschreibung zu finden.
+
+0:02:14.560,0:02:16.720
+Sobald Sie die neueste Version gefunden haben,  
+
+0:02:16.720,0:02:22.480
+gehen Sie zu den Assets und laden den Installer,
+Shasums und die Standardkonfiguration herunter.
+
+0:02:25.600,0:02:29.120
+Der öffentliche Schlüssel von Datahoarder  
+finden Sie auf jeder Release-Seite.
+
+0:02:31.680,0:02:35.840
+Öffnen Sie einen Texteditor und kopieren Sie 
+den öffentlichen Schlüssel in den Editor.
+
+0:02:38.000,0:02:40.786
+Wir können ihn als `key.txt` speichern.
+
+0:02:52.080,0:02:54.320
+Dann müssen wir Kleopatra öffnen und den 
+
+0:02:56.080,0:02:58.988
+Schlüssel importieren, den wir kopiert haben.
+
+0:03:08.718,0:03:14.408
+Wählen sie **beliebige Dateien** um die
+Datei "key.txt" sehen zu können.  
+
+0:03:18.960,0:03:21.360
+Nicht wichtig als vertrauenswürdig zu signieren,
+
+0:03:22.400,0:03:26.880
+Wichtig ist, dass ein Zertifikat zu sehen ist 
+das mit datahoarders Schlüssel übereinstimmt.
+
+0:03:31.280,0:03:33.600
+Als nächstes verifizieren wir die checksum Datei.  
+
+0:03:36.080,0:03:42.086
+auf **entschlüsseln/verifizieren** Klicken und 
+gehen Sie zu der heruntergeladene sha-Datei.
+
+0:03:52.880,0:03:57.360
+Wir können sehen, dass der Name auf dem Zertifikat 
+mit dem importierten Schlüssel übereinstimmt.
+
+0:03:59.440,0:04:04.560
+Zur Überprüfung, ob es sich tatsächlich die
+Datei ist, die wir installieren wollen.
+
+0:04:05.120,0:04:07.760
+Zurück zu unserem `monero-mining` Ordner,
+
+0:04:08.800,0:04:10.320
+Umschalt + Rechtsklick".
+
+0:04:11.280,0:04:13.840
+und  **Open powershell here** wählen.
+
+0:04:15.680,0:04:17.856
+Gib `Get-Filehash` ein
+
+0:04:18.160,0:04:21.680
+und dann den Namen der Datei 
+für die Sie den Hash erhalten möchten,
+
+0:04:21.680,0:04:24.160
+das ist in diesem Fall das 
+P2Pool-Installationsprogramm.  
+
+0:04:24.800,0:04:29.200
+Zum Glück müssen wir nicht alles eingeben. 
+Wir können einfach anfangen zu tippen  
+
+0:04:29.200,0:04:34.000
+"P2" und drücken dann `TAB` und es 
+vervollständigt den Dateinamen für uns.
+
+0:04:35.120,0:04:36.320
+Jetzt drücken wir `Enter`
+
+0:04:37.360,0:04:39.280
+und wir bekommen den Hash der Datei.
+
+0:04:41.680,0:04:47.040
+Wir können nun die shasum-Datei öffnen und den 
+den Hash mit dem gerade erzeugten vergleichen.
+
+0:04:48.720,0:04:53.280
+Klicken Sie mit der rechten Maustaste und öffnen 
+Sie einen Texteditor Ihrer Wahl.
+
+0:04:55.040,0:04:58.880
+Wir können sehen, dass dieser Hash mit dieser
+Zeile hier übereinstimmt.
+
+0:04:59.520,0:05:03.219
+Das bedeutet, dass wir eine Übereinstimmung haben 
+und dass die Datei sicher zu verwenden ist.
+
+0:05:12.000,0:05:15.520
+In Ordnung, jetzt, da wir das getan haben 
+ist es nun an der Zeit, P2Pool zu installieren.
+
+0:05:16.400,0:05:20.560
+Rechte Maustaste auf die Installationsdatei 
+klicken  und **Ausführen als Administrator** wählen.
+
+0:05:22.000,0:05:26.080
+Klicken Sie auf **Weiter**, bis Sie zu dem Teil 
+kommen wo Sie den Installationsort auswählen.
+
+0:05:27.040,0:05:29.760
+Installieren Sie es in denselben Ordner 
+in dem wir bisher gearbeitet haben.
+
+0:05:30.640,0:05:35.280
+Sie benötigen nun eine neue Monero-Wallet-Adresse 
+an die Sie Ihre geminte Monero empfangen möchten.
+
+0:05:36.320,0:05:41.360
+Nachdem die Einrichtung abgeschlossen ist,
+sehen Sie im `monero-mining` Ordner ein neuem Ordner.
+
+0:05:42.320,0:05:46.240
+Sie werden auch sehen, dass eine Verknüpfung 
+auf eurem Desktop erscheint.
+
+0:05:46.240,0:05:49.115
+So starten wir die P2Pool-Software.
+
+0:05:56.880,0:06:02.320
+Wenn Sie die Monero-Blockchain bereits wegen
+eines lokalen Knotens oder einer Wallet haben,  
+
+0:06:02.320,0:06:04.320
+Springen Sie zum nächsten Abschnitt.
+
+0:06:05.200,0:06:10.320
+Für alle anderen, folgen Sie diesem Abschnitt 
+sorgfältig und überspringt den nächsten.
+
+0:06:11.920,0:06:16.400
+Bevor Sie P2Pool starten, müssen Sie sicherstellen 
+dass Sie genügend Platz auf Ihrem Laufwerk haben.
+
+0:06:17.200,0:06:22.480
+Während der Ersteinrichtung erstellen wir eine
+Datei, die leicht 40 GB überschreiten kann.
+
+0:06:24.080,0:06:25.920
+Wenn Sie einverstanden sind,
+sollten Sie weiter machen 
+
+0:06:25.920,0:06:30.160
+Instalieren She P2Pool durch einen Doppelklick
+auf das Symbol, das gerade erstellt wurde.
+
+0:06:31.760,0:06:37.600
+Wir synchronisieren jetzt eine Datenbankdate im
+p2pool-Ordner mit der Monero-Blockchain.
+
+0:06:38.320,0:06:43.600
+Dies kann mehrere Stunden dauern, in der 
+Zwischenzeit können sie andere Teilen einrichten.
+
+0:06:44.640,0:06:48.000
+Wenn Sie diesem Abschnitt befolgt habt, ist es
+nicht nötig den nächsten den  Abschnitt:
+
+0:06:48.000,0:06:52.720
+ 
+**IMPORTIEREN EINER BEREITS VORHANDENEN BLOCKCHAIN**
+durchzuführen.
+
+0:06:53.520,0:06:59.841
+Sie können also den nächsten Abschnitt überspringen 
+und direkt zur Einrichtung von XMrig übergehen.
+
+0:07:08.160,0:07:13.040
+Für diejenigen unter Ihnen, die bereits die 
+Monero-Blockchain auf euren Computer habt  
+
+0:07:13.040,0:07:14.560
+haben Sie zwei Möglichkeiten.
+Die erste Möglichkeit wäre
+
+0:07:15.360,0:07:21.120
+die Dateien ins Verzeichnis p2pool/lmdb 
+zu kopieren oder verschieben.
+
+0:07:21.920,0:07:30.249
+Sie finden den bereits existierenden 
+lmdb-Ordner in C:\ProgramData\bitmonero.
+
+0:07:32.080,0:07:37.360
+Kopieren oder verschieben Sie den Ordner lmdb in das 
+Stammverzeichnis unseres aktuellen p2pool-Ordners.
+
+0:07:38.240,0:07:42.400
+Wenn Sie die Blockchain-Datei nicht verschieben oder 
+hinzu kopieren möchten,  
+
+0:07:42.400,0:07:45.520
+können Sie p2pool einfach zeigen, wo sie  ist.
+
+0:07:46.560,0:07:50.240
+Klicken Sie dazu mit der rechten Maustaste
+auf die Datei start.ps1,
+
+0:07:51.520,0:07:52.897
+wählen Sie editieren,
+
+0:07:54.696,0:07:56.428
+und gehen Sie zu Zeile 60.
+
+0:08:01.760,0:08:08.768
+Wo data-dir steht, werden wir 
+ändern wir dies von data-dir=. zu
+
+0:08:09.200,0:08:10.217
+Leerzeichen
+
+0:08:10.800,0:08:12.960
+und dann `C:\ProgramData\bitmonero\'
+
+0:08:18.240,0:08:20.400
+Jetzt können wir speichern und schließen
+
+0:08:21.680,0:08:25.188
+Wenn wir nun das Symbol auf dem 
+Desktop verwenden, um p2pool zu starten,  
+
+0:08:25.200,0:08:28.000
+wird es die  existierende Blockchain-Datei verwenden.
+
+0:08:29.200,0:08:33.881
+Das bedeutet, dass Sie nur kurz warten müssen,
+während die neuesten Blöcke synchronisiert werden.
+
+0:08:41.680,0:08:46.800
+Nun ist es an der Zeit, XMrig zu installieren. Wenn 
+Sie dies bereits installiert haben, dann  
+
+0:08:46.800,0:08:48.480
+können Sie diesen Abschnitt überspringen.
+
+0:08:49.600,0:08:54.640
+Gehen wir nun zum offiziellen xmrig 
+Github-Repository, um die neueste Version zu erhalten.
+
+0:08:55.636,0:08:58.436
+Den Link zu dieser Seite finden Sie 
+finden Sie unten in der Beschreibung.
+
+0:09:00.720,0:09:02.880
+Hier gibt es eine Menge Optionen,  
+
+0:09:02.880,0:09:08.960
+für Windows suchen wir nach der Option 
+die gcc-win64 im Dateinamen hat.
+
+0:09:10.000,0:09:13.200
+Vergessen Sie nicht, auch die beiden 
+Checksum-Dateien herunterzuladen.
+
+0:09:14.480,0:09:16.800
+Der Einfachheit halber werden wir diese 
+Dateien in den selben Ordner herunterladen  
+
+0:09:16.800,0:09:19.920
+in dem wir bis jetzt gearbeitet haben.
+
+0:09:21.520,0:09:24.800
+Wir verifizieren den Download 
+auf die gleiche Weise wie zuvor  
+
+0:09:24.800,0:09:28.000
+also werde ich den Prozess dieses Mal 
+etwas schneller durchführen.
+
+0:09:28.960,0:09:33.360
+Der öffentliche Schlüssel für xmrig befindet sich
+an einem  anderen Ort als die Dateien,
+
+0:09:34.160,0:09:36.180
+Der Link ist in der Videobeschreibung zu finden.
+
+0:09:38.560,0:09:41.920
+Noch einmal werden wir 
+den Schlüssel in eine Textdatei kopieren.  
+
+0:09:41.920,0:09:45.520
+Wir können dieselbe Datei `key.txt` von vorhin verwenden.
+
+0:09:48.320,0:09:53.120
+Jetzt, da wir unsere Dateien und den Schlüssel haben 
+werden wir Kleopatra noch einmal öffnen.
+
+0:09:59.120,0:10:01.892
+Zuerst importieren wir die Datei `key.txt`.
+
+0:10:05.120,0:10:06.588
+Gegensignieren ist nicht nötig.
+
+0:10:08.800,0:10:13.366
+Wählen Sie nun **entschlüsseln/verifizieren** 
+um die Shasum-Datei zu verifizieren.
+
+0:10:23.040,0:10:26.480
+Schließlich müssen wir zurückgehen 
+in unseren `monero-mining` Ordner  
+
+0:10:26.480,0:10:30.560
+und holen uns den Datei-Hash für das 
+XMRig.zip, das wir gerade heruntergeladen haben.
+
+0:10:31.200,0:10:32.880
+Noch einmal: Umschalt+Rechtsklick
+
+0:10:33.920,0:10:35.760
+Öffne hier das Powershell-Fenster
+
+0:10:37.200,0:10:38.720
+Gib `Get-Filehash` ein
+
+0:10:39.680,0:10:42.880
+und dann den Namen der Datei 
+den Sie erhalten möchten
+
+0:10:46.800,0:10:49.360
+Einfach TAB  drücken, um automatisch zu vervollständigen.
+
+0:10:51.760,0:10:53.017
+Das ist unsere Raute
+
+0:10:54.880,0:10:59.162
+Jetzt können wir unseren Texteditor öffnen 
+und sehen, ob es eine Übereinstimmung gibt.
+
+0:11:04.400,0:11:09.200
+Wie wir sehen gibt es eine Übereinstimmung zwischen 
+dieser Zeile und dem Hash den wir erzeugt haben.
+
+0:11:10.240,0:11:14.640
+Das bedeutet, die Zip-Datei ist tatsächlich
+diejenige  Datei die wir herunterladen sollten  
+
+0:11:14.640,0:11:17.280
+und sollte somit auch sicher zu verwenden sein.
+
+0:11:17.280,0:11:21.120
+Also öffnen wir die Datei und 
+und extrahieren den Inhalt.
+
+0:11:23.280,0:11:28.560
+Bevor wir mit unserer XMRig-Einrichtung weitermachen 
+sollten wir uns die P2Pool-Software ansehen.
+
+0:11:29.280,0:11:34.720
+Es hat etwa 8 Stunden gedauert, bis sie 
+auf meinem Rechner synchronisiert  war,  
+
+0:11:34.720,0:11:36.720
+danach ist es sehr wichtig, neu zu starten.
+
+0:11:37.360,0:11:39.680
+In der Beschreibung findest du einen Zeitstempel  
+
+0:11:39.680,0:11:43.440
+so dass nach einem Neustart, zur letztgesehene 
+Stelle des Videos zurückkehren können.
+
+0:11:50.080,0:11:50.800
+Willkommen zurück.
+
+0:11:51.520,0:11:55.840
+Um XMRig weiter einzurichten, 
+gehen Sie in den extrahierten Ordner.
+
+0:11:56.560,0:12:00.400
+Wir werden `benchmark_1M.cmd` ausführen,
+
+0:12:01.280,0:12:04.880
+und lassen es komplett durchlaufen, um 
+sicherzustellen, dass Ihr System stabil ist.
+
+0:12:05.920,0:12:10.640
+Während dies läuft, ist es eine gute Gelegenheit 
+zu überprüfen, ob `HUGE PAGES` aktiviert ist.
+
+0:12:10.640,0:12:14.080
+Dies ist sehr wichtig und wird 
+Hash-Rate wirklich verbessern.
+
+0:12:15.280,0:12:17.680
+Wenn nicht "Erlaubnis erteilt" angezeigt wird, gibt es  
+
+0:12:17.680,0:12:21.178
+einen Link unten in der Beschreibung 
+um Ihnen bei der Lösung dieses Problems zu helfen.
+
+0:12:24.560,0:12:27.600
+Sobald das erledigt ist, kann Ihre 
+Hash-Rate  hier gefunden werden.
+
+0:12:28.640,0:12:32.752
+Meine sagt 2157h/s.
+
+0:12:33.360,0:12:36.960
+Notieren Sie sich Ihre Hashrate, denn 
+Sie werden sie gleich brauchen.
+
+0:12:37.520,0:12:42.080
+Um sicherzustellen, dass XMRig die richtige 
+korrekte Konfiguration verwendet, wenn es läuft,  
+
+0:12:42.080,0:12:44.640
+hat datahoarder eine für uns zusammengestellt.
+
+0:12:45.200,0:12:48.560
+Das ist die Datei config.json
+die wir vorhin heruntergeladen haben.
+
+0:12:49.760,0:12:53.040
+Aber wir müssen noch eine kleine 
+Änderung vornehmen, bevor wir fortfahren.
+
+0:12:54.080,0:12:58.931
+In der Benutzer-Sektion haben wir derzeit "x+600000".
+
+0:12:59.360,0:13:04.320
+Wir sollten diese Zahl ersetzen durch 
+eine Zahl, die dem 30-fachen der Hash-Rate entspricht.
+
+0:13:05.040,0:13:08.960
+Meine Hash-Rate war zum Beispiel 2157,
+
+0:13:08.960,0:13:11.280
+also habe ich das mit 30 multipliziert
+
+0:13:12.560,0:13:17.360
+und setze die Zahl 64710 hier ein.
+
+0:13:18.160,0:13:21.440
+Jetzt können wir die Datei in den Ordner xmrig verschieben.
+
+0:13:23.680,0:13:25.840
+Ersetzen Sie die Datei im Zielordner.
+
+0:13:27.760,0:13:31.987
+Erstellen wir auch eine Verknüpfung für 
+xmrig und platzieren sie auf dem Desktop.
+
+0:13:39.840,0:13:43.520
+In Ordnung, es ist endlich Zeit 
+mit dem Mining zu beginnen.
+
+0:13:43.520,0:13:48.080
+Öffnen wir also p2pool, indem wir 
+indem wir auf das Desktop-Symbol klicken.
+
+0:13:48.080,0:13:52.400
+Wir müssen warten, bis es
+synchronisiert ist, bevor wir XMRig öffnen.
+
+0:13:53.360,0:13:59.648
+Sie werden wissen, dass es synchronisiert ist,wenn
+Sie Blockvorlagen empfangen und `depth = 0` sehen.
+
+0:14:00.347,0:14:02.362
+Endlich können wir XMRig starten.
+
+0:14:03.040,0:14:05.600
+Stellen Sie sicher als Administrator dies zu tun.
+
+0:14:06.160,0:14:10.480
+Andernfalls werden Sie folgendes sehen 
+Fehler `FAILED TO APPLY MSR MOD`.
+
+0:14:11.200,0:14:15.600
+Dies wird sich negativ auf Ihre 
+Hashrate beeinflussen, und zwar ganz erheblich.
+
+0:14:15.600,0:14:20.240
+Nochmals: Stellen Sie sicher, dass `HUGE 
+PAGES" auf "Erlaubnis erteilt" steht.
+
+0:14:20.240,0:14:23.262
+Wenn das nicht der Fall ist, finden Sie unter dem Link 
+in der Beschreibung nach Hilfe.
+
+0:14:30.080,0:14:33.840
+Um zu überprüfen, ob sich Ihre Arbeit sich 
+tatsächlich auszahlt, können Sie ein paar Dinge tun.
+
+0:14:34.480,0:14:38.400
+Erstens: xmrig sollte Aufträge von 
+Ihrer lokalen IP-Adresse empfangen.
+
+0:14:39.120,0:14:43.920
+Zweitens können Sie im Terminalfenster
+p2pool befehle verwenden.
+
+0:14:43.920,0:14:49.520
+`status` gibt den Status der Seiten chain, 
+Ihres Stratum-Servers und des p2pserver aus.
+
+0:14:50.160,0:14:55.680
+Wenn alles gut gelaufen ist, sollte mindestens 
+1 Verbindung in Unterrubrik stratumserver stehen.
+
+0:14:55.680,0:14:58.400
+und geschätzte Hash-Rate sollte angezeigt werden.
+
+0:14:59.680,0:15:05.040
+Da p2pool ein pplns-System verwendet, werden Sie 
+nur für Ihren Aufwand  bezahlt der für einen 
+
+0:15:05.040,0:15:07.680
+gelösten Block aufgebraucht wurde.
+
+0:15:08.240,0:15:10.560
+Für weitere Informationen über PPLNS,  
+
+0:15:10.560,0:15:14.000
+lesen Sie bitte den Blogbeitrag von NiceHash 
+der unten in den Kommentaren verlinkt ist.
+
+0:15:16.080,0:15:20.000
+Unter der Rubrik Sidechain sehen Sie 
+die Anzahl der Anteile, die Sie eingereicht haben und  
+
+0:15:20.000,0:15:23.840
+eine Annäherung an die Belohnung, die Sie 
+erhalten, sobald ein Block geprägt wurde.
+
+0:15:24.560,0:15:29.280
+Da wir noch keine Anteile eingereicht haben,
+sind noch  keine Informationen verfügbar.
+
+0:15:31.040,0:15:33.520
+Andere Befehle ashen Sie durch Eingabe von `help`.
+
+0:15:34.240,0:15:38.080
+Sie können zum Beispiel einstellen 
+
+0:15:38.080,0:15:41.360
+abmelden, wenn Ihnen die 
+Schnittstelle ein bisschen zu voll ist.
+
+0:15:42.960,0:15:46.080
+Log-Stufe 2 ist eine bequeme 
+Einstellung für die meisten Leute.
+
+0:15:46.640,0:15:51.207
+Um sie einzustellen, können Sie einfach `Loglevel 2` 
+eingeben und auf Eingabetaste drücken.
+
+0:15:59.920,0:16:04.800
+Es gibt zwei große Anreize 
+für Miner, p2pool beizutreten.
+
+0:16:05.440,0:16:09.920
+Der erste ist die niedrige Auszahlungsschwelle
+und 0% Gebühren.
+
+0:16:10.800,0:16:15.600
+Das andere ist die Möglichkeit, sich 
+für das xmrvsbeast-Gewinnspiel anzumelden.
+
+0:16:16.320,0:16:21.840
+Wenn du zum ersten Mal von der 
+xmrvsbeast-Verlosung hören, müssen Sie Folgendes wissen.
+
+0:16:23.200,0:16:28.720
+Die Verlosung soll Anreize für Miner schaffen, 
+insbesondere diejenigen mit niedrigen Hashrates.
+
+0:16:29.360,0:16:32.160
+Derzeit geschieht dies durch das Zeigen großer Mengen von  
+
+0:16:32.160,0:16:36.080
+Hashing-Leistung auf Ihren Knoten 
+für einen bestimmten Zeitraum.
+
+0:16:36.080,0:16:40.080
+Es begann erst kürzlich, Anfang 2021  
+
+0:16:40.080,0:16:43.840
+und wurde von einer 
+anonymen Gruppe oder Einzelperson.
+
+0:16:43.840,0:16:49.520
+Sie begannen mit der Einrichtung eines eigenen 
+Pool, aber mit dem Aufkommen des P2Pool,  
+
+0:16:49.520,0:16:55.920
+wurde der xmrvsbeast-Pool geschlossen und alle 
+Anreize wurden in das P2Pool-Netzwerk verlagert.
+
+0:16:57.760,0:17:00.080
+Wenn Sie an der Verlosung teilnehmen möchten,  
+
+0:17:00.080,0:17:04.240
+der nächste Teil des Videos behandelt 
+Portweiterleitung für diesen Zweck.
+
+0:17:06.960,0:17:11.680
+Damit die Hashing-Leistung 
+von xmrvsbeast deinen Knoten   
+
+0:17:11.680,0:17:15.200
+erreichen kann, müssen Sie Ihren 
+Stratum-Server für die Welt öffnen.
+
+0:17:16.000,0:17:18.240
+Portweiterleitung kann eine knifflige Angelegenheit sein,  
+
+0:17:18.240,0:17:22.960
+aber im Allgemeinen müsste Ihr Router als auch Ihr 
+Computer diesen Port weitergeleitet haben.
+
+0:17:23.520,0:17:28.720
+Da jeder Router anders ist, wird hier auf die 
+Portweiterleitung eingegangen.
+
+0:17:29.575,0:17:32.295
+Aber für Windows müssen wir Folgendes tun:
+
+0:17:34.000,0:17:38.800
+Öffnen Sie das Windows-Startmenü und 
+tippen Sie das Wort "Firewall" ein.
+
+0:17:38.800,0:17:40.480
+Es sollte das erste Ergebnis sein.  
+
+0:17:41.760,0:17:46.880
+Klicken Sie **Erweiterte Einstellungen** 
+und wählen Sie dann **Eingangsregeln**.
+
+0:17:48.640,0:17:49.680
+Erstellen Sie eine neue Regel.
+
+0:17:51.600,0:17:53.120
+Diese Regel ist für einen Port.
+
+0:17:54.480,0:17:55.760
+Klicken Sie auf Weiter.
+
+0:17:55.760,0:17:56.880
+Wir wollen TCP
+
+0:17:57.600,0:18:01.360
+und dann die Portnummer, die 3333 ist.
+
+0:18:02.080,0:18:03.280
+Erlauben Sie die Verbindung.
+
+0:18:03.920,0:18:05.280
+Klicken Sie schließlich auf Weiter
+
+0:18:06.400,0:18:11.360
+gib einen Namen, ich nenne es 
+Stratum, das war's.
+
+0:18:11.360,0:18:17.120
+Wir haben Port 3333 geöffnet, der auch der 
+Standard Port des Standard-Stratum-Servers ist.
+
+0:18:17.920,0:18:29.280
+Empfohlen ist auch, Ports 18080 (Monero Daemon)
+und 37889 (P2Pool Peer Network) zu öffnen.
+
+0:18:29.280,0:18:32.560
+für eine bessere Konnektivität mit 
+dem Rest des Netzwerks.
+
+0:18:32.560,0:18:34.640
+Dies ist jedoch nicht zwingend erforderlich.
+
+0:18:42.160,0:18:44.880
+Sobald Sie den richtigen Port weitergeleitet haben
+
+0:18:44.880,0:18:49.840
+müssen Sie sich auf die xmrvsbeast-Website anmelden,
+die in der Beschreibung verlinkt ist.
+
+0:18:51.360,0:18:54.720
+Am Ende der Landing Page 
+finden Sie einige nützliche Links.
+
+0:18:55.520,0:19:00.080
+Der erste ist das Boost-Dashboard. 
+Neben einem Gewinnspiel gibt es auch  
+
+0:19:00.080,0:19:06.160
+ein Boost-System, das Hashrate an Miner nacheinander
+ und nicht zufällig vergibt.
+
+0:19:06.160,0:19:11.280
+Unabhängig von Ihrem Glück können Sie immer 
+von Zeit zu Zeit einen kleinen Boost erwarten.
+
+0:19:11.280,0:19:15.360
+Der zweite Link erklärt die Regeln des
+Gewinnspiels genauer  
+
+0:19:15.360,0:19:20.240
+und bietet eine Seite zur Anmeldung, die 
+wir gleich aufrufen werden.
+
+0:19:20.240,0:19:24.160
+Sowie eine Seite, auf der Sie Ihre 
+Historie als Gewinnspielteilnehmer.
+
+0:19:25.000,0:19:27.363
+Wählen Sie Registrieren/Aktualisieren.
+
+0:19:28.000,0:19:31.760
+Hier geben Sie die Informationen ein
+um Ihren Knoten zu finden.
+
+0:19:32.480,0:19:36.480
+Dies beinhaltet Ihre Monero-Adresse die
+verwendet wird, um die Verlosung zu verwalten,  
+
+0:19:36.480,0:19:40.400
+Ihre öffentliche IP-Adresse und 
+den Port, den Sie weitergeleitet haben.
+
+0:19:41.200,0:19:45.120
+Das Token-Feld sollte bei 
+eine neue Registrierungen leer bleiben.
+
+0:19:45.760,0:19:50.400
+Ihre öffentliche IP-Adresse können Sie mit
+dem Befehl 'ipconfig' im Powershell oder 
+
+0:19:50.400,0:19:56.400
+auf verschiedenen Webseiten
+von Drittanbieter herausfinden.
+
+0:19:57.040,0:20:03.360
+Webseiten von vpn-Anbietern wie mullvad oder
+nordvpn sind für diesen Zweck sehr gut geeignet.
+
+0:20:04.560,0:20:07.760
+Eine erfolgreiche Registrierung 
+sollte in etwa so aussehen.
+
+0:20:09.040,0:20:11.600
+Es ist wichtig ihren Token aufzuschreiben.
+
+0:20:12.400,0:20:14.720
+Wir können doppelt prüfen 
+ob die Registrierung 
+
+0:20:14.720,0:20:18.000
+erfolgreich war, 
+indem wir auf die Historienseite gehen
+
+0:20:18.000,0:20:22.000
+und dort unsere XMR-Adresse und 
+Tokens eingeben, das wir erhalten haben.
+
+0:20:22.960,0:20:27.514
+Wenn Sie Probleme mit diesem Schritt haben,
+gehen Sie zum xmrvsbeast Subreddit
+
+0:20:27.600,0:20:31.520
+ und suchen Sie nach ähnlichen
+ Problemen, bevor Sie dort etwas posten.
+
+0:20:32.240,0:20:34.640
+Ein Link dazu ist in der Beschreibung zu finden.
+
+0:20:41.280,0:20:46.880
+Ihren Fortschritt aus der ferne können sie 
+leicht auf https://p2pool.observer/ überprüfen.
+
+0:20:47.440,0:20:52.160
+Hier können mit Ihre Monero-Adresse 
+Ihren individuellen Fortschritt finden.
+
+0:20:53.276,0:20:56.156
+Da wir neu sind, bekommen wir eine Fehlermeldung.
+
+0:20:56.560,0:21:02.480
+Erst wenn Sie Anteile gefunden wurden sehen Sie 
+Informationen über Ihren Miner und seinen Fortschritt.
+
+0:21:03.120,0:21:05.920
+Um herauszufinden, wie oft Sie Anteile produzieren,
+
+0:21:05.920,0:21:10.880
+gehen Sie zurück zur Hauptseite, wählen Sie den
+Rechner für die durchschnittliche Produktionszeit,
+
+0:21:10.880,0:21:14.000
+geben Sie Ihre Hashrate ein und 
+Sie erhalten eine Schätzung.
+
+0:21:14.880,0:21:18.400
+Werfen wir einen Blick auf einen anderen 
+Miner-Fortschritt, um ein Beispiel zu sehen.
+
+0:21:19.680,0:21:24.160
+Hier sehen Sie die Statistiken des miners,
+einschließlich des durchschnittlichen Aufwands,
+
+0:21:24.160,0:21:26.960
+gefundene Blöcke und Anteilspositionen.
+
+0:21:26.960,0:21:32.240
+Anteile bewegen sich von rechts nach links 
+mit der Zeit im Gegensatz zum p2pool-Programm.
+
+0:21:32.240,0:21:35.440
+Darunter sehen Sie 
+Informationen über jede Auszahlung  
+
+0:21:35.440,0:21:38.916
+und die Aktien, die diese Auszahlungen 
+diese Auszahlungen ermöglicht haben.
+
+0:21:43.120,0:21:47.520
+Dieser Pool ist nur möglich durch 
+durch die harte Arbeit der Spender.  
+
+0:21:47.520,0:21:51.760
+Das Hauptrepository für p2pool finden Sie 
+ist in der Beschreibung unten zu finden.
+
+0:21:52.320,0:21:56.080
+Wenn Sie mehr wissen wollen wie es 
+funktioniert und welche Funktionen es hat,  
+
+0:21:56.080,0:21:59.680
+und wie man es auf einem 
+anderen Betriebssystem einrichtet,
+
+0:21:59.680,0:22:01.156
+hier ist der richtige Ort.
+
+0:22:01.600,0:22:05.440
+Und unten auf dieser Seite 
+finden Sie eine Spendenadresse.
+
+0:22:05.440,0:22:09.360
+Die Menschen, die an diesen Projekte arbeiten, 
+tun es hauptsächlich aus Liebe, nicht für Geld,  
+
+0:22:09.360,0:22:12.480
+Jede Spende dient also dazu, sie zu motivieren.
+
+0:22:13.440,0:22:18.356
+Nun, das war's mit diesem Video. Vielen Dank 
+fürs Zuschauen und viel Spaß beim Mining.
+
+0:22:18.462,0:22:20.369
+~moneroguides
+
+0:22:20.462,0:22:23.369
+Deutsche übersetzung:
+ZeoZ
+ 
